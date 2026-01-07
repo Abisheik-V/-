@@ -1,0 +1,457 @@
+/* Google Fonts Import - optional but recommended for better typography */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-green: #4CAF50;
+    --dark-green: #2E7D32;
+    --text-dark: #212529;
+    --text-light: #6c757d;
+    --bg-cream: #f9f7f0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+}
+
+.home-container {
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar-brand img {
+    height: 40px;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--text-dark) !important;
+}
+
+.nav-link.active {
+    color: var(--primary-green) !important;
+}
+
+/* Hero Section */
+.hero-wrapper {
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+.hero-rounded-container {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Floating Stats */
+.hero-rounded-container .row .col-lg-3 .bg-white {
+    transition: transform 0.3s ease;
+}
+
+.hero-rounded-container .row .col-lg-3 .bg-white:hover {
+    transform: translateY(-5px);
+}
+
+/* Common Section Padding */
+.section-padding {
+    padding: 80px 0;
+}
+
+/* Who We Are Diagram */
+.icon-circle {
+    width: 90px;
+    height: 90px;
+    border: 5px solid transparent;
+    margin-bottom: -70px;
+    margin-left: -10px;
+    /* Optional: Add border if needed to match image */
+}
+
+/* Positioning based on the provided image shape */
+.overlay-top {
+    top: 15%;
+    /* Move down so icon is INSIDE the top shape */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.overlay-left {
+    top: 60%;
+    /* Adjust vertical alignment for side blobs */
+    left: 5%;
+    /* Move outwards slightly */
+    transform: translateY(-50%);
+}
+
+.overlay-right {
+    top: 60%;
+    /* Adjust vertical alignment for side blobs */
+    right: 5%;
+    /* Move outwards slightly */
+    transform: translateY(-50%);
+}
+
+.connector-line {
+    width: 50px;
+    /* Slightly shorter to fit text */
+    height: 2px;
+    background-color: var(--primary-green);
+    margin: 0 15px;
+}
+
+/* Specific text tweaks */
+.overlay-top h4 {
+    margin-bottom: 1rem !important;
+    /* Reset margin */
+    position: relative;
+    top: -40px;
+    /* Pull text up ABOVE the shape */
+}
+
+.overlay-left h5,
+.overlay-right h5 {
+    white-space: nowrap;
+}
+
+
+/* Service Highlights */
+.service-icon-box {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.service-icon-box:hover {
+    background-color: var(--primary-green);
+    color: #fff;
+    /* If using font icons, this would change color */
+}
+
+.service-img-card {
+    overflow: hidden;
+}
+
+.service-img-card img {
+    transition: transform 0.5s ease;
+}
+
+.service-img-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Why Choose Us */
+.choice-card {
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.choice-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+    transform: translateY(-3px);
+}
+
+/* Footer Section */
+.footer-container {
+    background-color: #5c9c44 !important;
+    /* Specific green from image */
+}
+
+.social-icon-circle {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1.2rem;
+}
+
+.social-icon-circle:hover {
+    background-color: #fff;
+    color: #5c9c44;
+}
+
+/* Navbar Hover Effect */
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-green) !important;
+}
+
+/* Footer Links Hover Customization */
+.footer-links li a {
+    opacity: 0.75;
+    /* Base opacity moved here from HTML */
+    transition: all 0.3s ease;
+}
+
+.footer-links li a:hover {
+    opacity: 1;
+    padding-left: 8px;
+    /* Move slightly right */
+    color: #fff !important;
+    /* Ensure stays white (or make it brighter/yellowish if preferred, but white at full opacity is standard 'active' look on dark bg) */
+}
+
+.footer-links i {
+    font-size: 1.1rem;
+}
+
+.placeholder-white::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Newsletter Custom Input */
+.custom-newsletter-input {
+    background-color: rgba(46, 125, 50, 0.4) !important;
+    /* Darker semi-transparent green */
+    color: #2e5a27 !important;
+    /* Dark green text */
+    font-weight: 500;
+}
+
+.custom-newsletter-input::placeholder {
+    color: #2e5a27 !important;
+    opacity: 0.7;
+}
+
+.custom-newsletter-input:focus {
+    background-color: rgba(46, 125, 50, 0.5) !important;
+    box-shadow: none;
+}
+
+/* Awareness Drive Section Custom Styles */
+.rounded-custom {
+    border-radius: 40px !important;
+}
+
+.stat-box-green {
+    background-color: #5c9c44 !important;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.awareness-title {
+    font-size: 3rem;
+    line-height: 1.1;
+    color: #212529;
+    letter-spacing: -1px;
+}
+
+.awareness-divider {
+    width: 80px;
+    height: 3px;
+    background-color: #b0bec5;
+    margin-bottom: 2rem;
+}
+
+/* Services Dropdown */
+.services-dropdown {
+    top: 100%;
+    padding-top: 10px;
+    display: none !important;
+    /* Hidden by default */
+    z-index: 1000;
+}
+
+.nav-item:hover .services-dropdown {
+    display: flex !important;
+    /* Show on hover */
+}
+
+.dropdown-line {
+    width: 1px;
+    height: 15px;
+    background-color: #6c757d;
+}
+
+.dropdown-content {
+    width: 250px;
+    font-size: 0.65rem;
+}
+
+/* Process Diagram Responsive Adjustments */
+@media (max-width: 991px) {
+
+    /* 1. Reset Container */
+    .process-diagram-wrapper {
+        min-height: auto !important;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    /* 2. Hide the circular background frame */
+    .process-frame-wrapper>img {
+        display: none !important;
+    }
+
+    /* 3. Reset Frame Wrapper Size (it was limiting layout) */
+    .process-frame-wrapper {
+        width: 100% !important;
+        height: auto !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* 4. Center Title styling */
+    .process-center-title {
+        position: static !important;
+        transform: none !important;
+        text-align: center !important;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .process-center-title h2 {
+        text-align: center;
+    }
+
+    /* 5. Process Step Cards - Override ALL absolute positioning */
+    .process-step {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        transform: none !important;
+
+        width: 100% !important;
+        max-width: 400px;
+        /* Limit width on tablets */
+        margin: 0 auto 20px auto;
+        /* Add margin bottom for spacing between stacked items */
+
+        /* Card Styling for mobile */
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: 20px;
+        padding: 25px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        text-align: center !important;
+        /* Force center alignment */
+    }
+
+    /* Ensure specific alignment fixes within steps are handled */
+    .process-step .d-flex {
+        justify-content: center !important;
+        /* Center icons */
+    }
+
+    .process-step h6 {
+        position: static !important;
+        transform: none !important;
+        left: auto !important;
+        top: auto !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Fix step-specific internal alignment to be center for mobile */
+    .process-step p {
+        text-align: center !important;
+    }
+}
+
+/* Footer Newsletter Responsive Fix */
+@media (max-width: 576px) {
+    .newsletter-box .position-relative {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter-box .bi-envelope {
+        top: 25px !important;
+        /* Adjust Icon position relative to input */
+        transform: translateY(-50%) !important;
+    }
+
+    .custom-newsletter-input {
+        width: 100% !important;
+        padding-right: 20px !important;
+        /* Remove huge right padding since button moves */
+    }
+
+    .newsletter-box button {
+        position: static !important;
+        /* Stack button below input */
+        transform: none !important;
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+/* Home Page Hero Responsive Fix */
+@media (max-width: 991px) {
+
+    /* Reduce Hero Title Size */
+    .hero-wrapper h1.display-1 {
+        font-size: 2.5rem;
+        /* Further reduced for better fit */
+    }
+
+    /* Reset vertical height constraint on mobile to allow natural flow */
+    .hero-wrapper .min-vh-100 {
+        min-height: auto !important;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    /* Adjust wrapper spacing */
+    .hero-wrapper {
+        padding-bottom: 0 !important;
+    }
+
+    /* Refactor Floating Stats to be Static on Mobile */
+    /* Targeting by class is sufficient now since we removed the specific selector override above */
+    .hero-stats-container {
+        position: static !important;
+        transform: none !important;
+        width: 100% !important;
+        margin-top: 1.5rem;
+        margin-bottom: 0 !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Ensure the specific bootstrap selection doesn't interfere if still present in DOM order */
+    .container.position-absolute.start-50.top-100.translate-middle {
+        position: static !important;
+        transform: none !important;
+        width: 100% !important;
+    }
+
+    /* Reduce section padding on mobile for tighter spacing */
+    .section-padding {
+        padding: 20px 0;
+    }
+
+    /* Further reduce gap specifically between Who We Are and Services */
+    #who-we-are {
+        padding-bottom: 20px !important;
+        padding-top: 20px !important;
+    }
+
+    #services {
+        padding-top: 20px !important;
+    }
+}
