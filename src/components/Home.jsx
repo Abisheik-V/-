@@ -141,7 +141,7 @@ const Home = () => {
             {/* Mobile spacer removed */}
 
             {/* Who We Are */}
-            <section className="section-padding pb-0 text-center overflow-hidden" id="who-we-are">
+            <section className="section-padding pb-3 text-center overflow-hidden" id="who-we-are">
                 <div className="container">
                     <h1 className="fw-bold mb-2 display-5">Who We Are</h1>
                     <p className="text-muted fs-5 mb-3">Leading Integrated Electronic Waste Management Company</p>
