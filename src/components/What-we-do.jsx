@@ -28,6 +28,7 @@ import iconCarbon from '../assets/images/icon_carbon.png';
 import iconPrecious from '../assets/images/icon_precious.png';
 // Icons for "Who We Serve" - using generic client/icon placeholders or recycling icons
 import client1 from '../assets/images/client1.png';
+import whoWeServeDiagram from '../assets/images/who_we_serve_diagram.png';
 import client2 from '../assets/images/client2.png';
 import iconUpcycle from '../assets/images/icon_upcycle.png';
 import bulletArrow from '../assets/images/bullet_arrow.png';
@@ -199,167 +200,9 @@ const WhatWeDo = () => {
             {/* Who We Serve */}
             <section className="section-padding bg-white overflow-hidden">
                 <div className="container text-center">
-                    {/* Desktop View (Circular Layout) */}
-                    <div className="d-none d-lg-flex position-relative mx-auto align-items-center justify-content-center" style={{ width: '800px', height: '600px' }}>
-
-                        {/* Main Green Shape */}
-                        <div className="position-absolute border border-5 border-white"
-                            style={{
-                                width: '500px',
-                                height: '480px',
-                                backgroundColor: '#5c9c44',
-                                borderRadius: '45%',
-                                zIndex: 1
-                            }}>
-                        </div>
-
-                        {/* Separator Lines (Creating 6 sectors) */}
-                        <div className="position-absolute bg-white" style={{ width: '4px', height: '500px', transform: 'rotate(0deg)', zIndex: 1 }}></div>
-                        <div className="position-absolute bg-white" style={{ width: '4px', height: '500px', transform: 'rotate(60deg)', zIndex: 1 }}></div>
-                        <div className="position-absolute bg-white" style={{ width: '4px', height: '500px', transform: 'rotate(120deg)', zIndex: 1 }}></div>
-
-                        {/* Central Circle */}
-                        <div className="position-absolute rounded-circle bg-white d-flex align-items-center justify-content-center shadow-sm"
-                            style={{ width: '160px', height: '160px', zIndex: 10 }}>
-                            <h4 className="fw-bold text-dark m-0 lh-base">Who we<br />serve</h4>
-                        </div>
-
-                        {/* --- SECTOR 1: Government (Top Right / 1 o'clock) --- */}
-                        {/* Text */}
-                        <div className="position-absolute text-white fw-bold lh-sm text-center" style={{ top: '120px', left: '440px', zIndex: 5, width: '140px' }}>
-                            Government bodies<br />& public institutions
-                        </div>
-                        {/* Icon & Line */}
-                        <div className="position-absolute" style={{ top: '40px', right: '180px', zIndex: 5 }}>
-                            <i className="bi bi-bank fs-1" style={{ color: '#2e496a' }}></i>
-                            <div className="bg-secondary opacity-50 position-absolute" style={{ width: '2px', height: '50px', bottom: '-40px', left: '0', transform: 'rotate(30deg)' }}></div>
-                        </div>
-
-                        {/* --- SECTOR 2: Large Enterprises (Right / 3 o'clock) --- */}
-                        {/* Text */}
-                        <div className="position-absolute text-white fw-bold lh-sm text-center" style={{ top: '240px', left: '520px', zIndex: 5, width: '140px' }}>
-                            Large enterprises<br />& multinationals
-                        </div>
-                        {/* Icon & Line */}
-                        <div className="position-absolute" style={{ top: '240px', right: '50px', zIndex: 5 }}>
-                            <i className="bi bi-building fs-1" style={{ color: '#2e496a' }}></i>
-                            <div className="bg-secondary opacity-50 position-absolute" style={{ width: '50px', height: '2px', top: '50%', right: '50px', transform: 'translateY(-50%)' }}></div>
-                        </div>
-
-                        {/* --- SECTOR 3: OEMs (Bottom Right / 5 o'clock) --- */}
-                        {/* Text */}
-                        <div className="position-absolute text-white fw-bold lh-sm text-center" style={{ top: '380px', left: '440px', zIndex: 5, width: '150px' }}>
-                            OEMs, IT distributors<br />& channel partners
-                        </div>
-                        {/* Icon & Line */}
-                        <div className="position-absolute" style={{ bottom: '60px', right: '180px', zIndex: 5 }}>
-                            <i className="bi bi-pc-display fs-1" style={{ color: '#e6655c' }}></i>
-                            <div className="bg-secondary opacity-50 position-absolute" style={{ width: '2px', height: '50px', top: '-40px', left: '0', transform: 'rotate(-30deg)' }}></div>
-                        </div>
-
-                        {/* --- SECTOR 4: Retailers (Bottom Left / 7 o'clock) --- */}
-                        {/* Text */}
-                        <div className="position-absolute text-white fw-bold lh-sm text-center" style={{ top: '380px', left: '220px', zIndex: 5, width: '140px' }}>
-                            Retailers & consumer<br />electronics brands
-                        </div>
-                        {/* Icon & Line */}
-                        <div className="position-absolute" style={{ bottom: '60px', left: '200px', zIndex: 5 }}>
-                            <i className="bi bi-shop fs-1" style={{ color: '#2e496a' }}></i>
-                            <div className="bg-secondary opacity-50 position-absolute" style={{ width: '2px', height: '50px', top: '-40px', right: '0', transform: 'rotate(30deg)' }}></div>
-                        </div>
-
-                        {/* --- SECTOR 5: Education (Left / 9 o'clock) --- */}
-                        {/* Text */}
-                        <div className="position-absolute text-white fw-bold lh-sm text-center" style={{ top: '280px', left: '160px', zIndex: 5, width: '140px' }}>
-                            Education<br />networks &<br />universities
-                        </div>
-                        {/* Icon & Line */}
-                        <div className="position-absolute" style={{ top: '300px', left: '60px', zIndex: 5 }}>
-                            <i className="bi bi-mortarboard fs-1" style={{ color: '#e6655c' }}></i>
-                            <div className="bg-secondary opacity-50 position-absolute" style={{ width: '50px', height: '2px', top: '50%', left: '50px', transform: 'translateY(-50%)' }}></div>
-                        </div>
-
-                        {/* --- SECTOR 6: Individual Consumers (Top Left / 11 o'clock) --- */}
-                        {/* Text */}
-                        <div className="position-absolute text-white fw-bold lh-sm text-center" style={{ top: '150px', left: '220px', zIndex: 5, width: '120px' }}>
-                            Individual<br />consumers
-                        </div>
-                        {/* Icon & Line */}
-                        <div className="position-absolute" style={{ top: '60px', left: '200px', zIndex: 5 }}>
-                            <i className="bi bi-person fs-1" style={{ color: '#2e496a' }}></i>
-                            <div className="bg-secondary opacity-50 position-absolute" style={{ width: '2px', height: '50px', bottom: '-40px', right: '0', transform: 'rotate(-30deg)' }}></div>
-                        </div>
-
-                    </div>
-
-                    {/* Mobile View (Grid Layout) */}
-                    <div className="d-block d-lg-none">
-                        <div className="row g-4 justify-content-center">
-                            <div className="col-12 mb-4">
-                                <h2 className="fw-bold text-dark">Who We Serve</h2>
-                            </div>
-
-                            {/* Card 1 */}
-                            <div className="col-md-6">
-                                <div className="p-4 rounded-4 text-white d-flex align-items-center gap-3" style={{ backgroundColor: '#5c9c44' }}>
-                                    <div className="bg-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style={{ width: '60px', height: '60px' }}>
-                                        <i className="bi bi-bank fs-3" style={{ color: '#2e496a' }}></i>
-                                    </div>
-                                    <h5 className="mb-0 text-start fw-bold">Government bodies & public institutions</h5>
-                                </div>
-                            </div>
-
-                            {/* Card 2 */}
-                            <div className="col-md-6">
-                                <div className="p-4 rounded-4 text-white d-flex align-items-center gap-3" style={{ backgroundColor: '#5c9c44' }}>
-                                    <div className="bg-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style={{ width: '60px', height: '60px' }}>
-                                        <i className="bi bi-building fs-3" style={{ color: '#2e496a' }}></i>
-                                    </div>
-                                    <h5 className="mb-0 text-start fw-bold">Large enterprises & multinationals</h5>
-                                </div>
-                            </div>
-
-                            {/* Card 3 */}
-                            <div className="col-md-6">
-                                <div className="p-4 rounded-4 text-white d-flex align-items-center gap-3" style={{ backgroundColor: '#5c9c44' }}>
-                                    <div className="bg-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style={{ width: '60px', height: '60px' }}>
-                                        <i className="bi bi-pc-display fs-3" style={{ color: '#e6655c' }}></i>
-                                    </div>
-                                    <h5 className="mb-0 text-start fw-bold">OEMs, IT distributors & channel partners</h5>
-                                </div>
-                            </div>
-
-                            {/* Card 4 */}
-                            <div className="col-md-6">
-                                <div className="p-4 rounded-4 text-white d-flex align-items-center gap-3" style={{ backgroundColor: '#5c9c44' }}>
-                                    <div className="bg-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style={{ width: '60px', height: '60px' }}>
-                                        <i className="bi bi-shop fs-3" style={{ color: '#2e496a' }}></i>
-                                    </div>
-                                    <h5 className="mb-0 text-start fw-bold">Retailers & consumer electronics brands</h5>
-                                </div>
-                            </div>
-
-                            {/* Card 5 */}
-                            <div className="col-md-6">
-                                <div className="p-4 rounded-4 text-white d-flex align-items-center gap-3" style={{ backgroundColor: '#5c9c44' }}>
-                                    <div className="bg-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style={{ width: '60px', height: '60px' }}>
-                                        <i className="bi bi-mortarboard fs-3" style={{ color: '#e6655c' }}></i>
-                                    </div>
-                                    <h5 className="mb-0 text-start fw-bold">Education networks & universities</h5>
-                                </div>
-                            </div>
-
-                            {/* Card 6 */}
-                            <div className="col-md-6">
-                                <div className="p-4 rounded-4 text-white d-flex align-items-center gap-3" style={{ backgroundColor: '#5c9c44' }}>
-                                    <div className="bg-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style={{ width: '60px', height: '60px' }}>
-                                        <i className="bi bi-person fs-3" style={{ color: '#2e496a' }}></i>
-                                    </div>
-                                    <h5 className="mb-0 text-start fw-bold">Individual consumers</h5>
-                                </div>
-                            </div>
-
-                        </div>
+                    <h2 className="fw-bold text-dark mb-4">Who We Serve</h2>
+                    <div className="d-flex justify-content-center">
+                        <img src={whoWeServeDiagram} alt="Who We Serve" className="img-fluid" style={{ maxWidth: '800px', width: '100%' }} />
                     </div>
                 </div>
             </section>

@@ -26,6 +26,7 @@ import recycleItAssets from '../assets/images/recycle_it_assets.png';
 import recycleHomeAppliances from '../assets/images/recycle_home_appliances.png';
 import recycleIndustrial from '../assets/images/recycle_industrial.png';
 import processFrame from '../assets/images/process_frame.png';
+import fullProcessDiagram from '../assets/images/full_process_diagram.png';
 import processCollect from '../assets/images/process_collect.png';
 import iconRefurb from '../assets/images/icon_refurb.png';
 import iconRepair from '../assets/images/icon_repair.png';
@@ -230,75 +231,8 @@ const WhatWeDo = () => {
 
             {/* Process Diagram Section */}
             <section className="section-padding bg-white pt-5">
-                <div className="container position-relative d-flex justify-content-center align-items-center process-diagram-wrapper" style={{ minHeight: '900px' }}>
-
-                    {/* Main Frame Image */}
-                    <div className="position-relative process-frame-wrapper" style={{ width: '800px', height: '800px' }}>
-                        <img src={processFrame} alt="Process Frame" className="w-100 h-100 object-fit-contain opacity-50" style={{ transform: 'scale(1.1)' }} />
-
-                        {/* Center Text */}
-                        <div className="position-absolute top-50 translate-middle text-start process-center-title" style={{ left: '35%' }}>
-                            <h2 className="display-4 fw-bold mb-0 text-dark">Process</h2>
-                        </div>
-
-                        {/* Step 1: Collect (Top Left) */}
-                        <div className="position-absolute text-center process-step process-step-1" style={{ top: '15%', left: '32%', width: '220px', transform: 'translate(-50%, -50%)' }}>
-                            <p className="small text-muted mb-2 fw-medium lh-sm" style={{ fontSize: '0.8rem' }}>We collect e-waste from businesses, individuals, and organizations across India</p>
-                            <div className="mb-1 d-flex justify-content-center">
-                                <img src={processCollect} alt="Collect" style={{ width: '60px' }} />
-                            </div>
-                            <h6 className="fw-bold mt-1">COLLECT</h6>
-                        </div>
-
-                        {/* Step 2: Sort (Top Right) */}
-                        <div className="position-absolute text-center process-step process-step-2" style={{ top: '25%', left: '60%', width: '220px', transform: 'translate(-50%, -50%)' }}>
-                            <p className="small text-muted mb-2 fw-medium lh-sm" style={{ fontSize: '0.8rem' }}>We sort collected e-waste to identify reusable, recyclable, and hazardous materials</p>
-                            <div className="mb-1 d-flex justify-content-center">
-                                {/* Placeholder icon for Sort - reusing introSprout or a specific bin if available, currently generic */}
-                                <div className="bg-success bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px' }}>
-                                    <i className="bi bi-recycle fs-2 text-success"></i>
-                                </div>
-                            </div>
-                            <h6 className="fw-bold mt-1">SORT</h6>
-                        </div>
-
-                        {/* Step 3: Refurbish (Right Middle) */}
-                        <div className="position-absolute text-center process-step process-step-3" style={{ top: '45%', right: '10%', width: '240px', transform: 'translate(0, -50%)' }}>
-                            <p className="small text-muted mb-2 fw-medium lh-sm" style={{ fontSize: '0.8rem', textAlign: 'left' }}>We refurbish devices to extend their lifespan & provide affordable alternatives to new products</p>
-                            <div className="d-flex align-items-center gap-2">
-                                <h6 className="fw-bold mb-0">REFURBISH</h6>
-                                <img src={iconRefurb} alt="Refurbish" style={{ width: '40px' }} />
-                            </div>
-                        </div>
-
-                        {/* Step 4: Parts Salvage (Bottom Right) */}
-                        <div className="position-absolute text-start process-step process-step-4" style={{ top: '65%', right: '10%', width: '240px', transform: 'translate(0, -50%)' }}>
-                            <div className="d-flex align-items-center gap-2 mb-2">
-                                <h6 className="fw-bold mb-0">PARTS SALVAGE</h6>
-                                <img src={iconRepair} alt="Parts Salvage" style={{ width: '40px' }} />
-                            </div>
-                            <p className="small text-muted mb-0 fw-medium lh-sm" style={{ fontSize: '0.8rem' }}>We extract parts from assets which are beyond economic repair to support out of warranty service market</p>
-                        </div>
-
-                        {/* Step 5: Recycle (Bottom Middle) */}
-                        <div className="position-absolute text-center process-step process-step-5" style={{ bottom: '15%', left: '60%', width: '220px', transform: 'translate(-50%, 0)' }}>
-                            <div className="mb-2 d-flex justify-content-center">
-                                <img src={recycleIcon} alt="Recycle" style={{ width: '50px' }} />
-                            </div>
-                            <h6 className="fw-bold mb-2">RECYCLE</h6>
-                            <p className="small text-muted mb-0 fw-medium lh-sm" style={{ fontSize: '0.8rem' }}>We recycle non-refurbishable devices, responsibly extracting hazardous waste, metals and plastics</p>
-                        </div>
-
-                        {/* Step 6: Upcycle (Bottom Left) */}
-                        <div className="position-absolute text-center process-step process-step-6" style={{ bottom: '15%', left: '32%', width: '240px', transform: 'translate(-50%, 0)' }}>
-                            <div className="mb-2 d-flex justify-content-center">
-                                <img src={iconUpcycle} alt="Upcycle" style={{ width: '50px' }} />
-                            </div>
-                            <h6 className="fw-bold mb-2">UPCYCLE</h6>
-                            <p className="small text-muted mb-0 fw-medium lh-sm" style={{ fontSize: '0.8rem' }}>We upcycle salvaged materials after dismantling the end-of-life assets, returning them to the manufacturing process to create new products</p>
-                        </div>
-
-                    </div>
+                <div className="container d-flex justify-content-center align-items-center">
+                    <img src={fullProcessDiagram} alt="E-waste Process Flow" className="img-fluid" style={{ maxWidth: '1000px', width: '100%' }} />
                 </div>
             </section>
 
