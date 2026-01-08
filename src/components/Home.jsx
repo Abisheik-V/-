@@ -82,7 +82,7 @@ const Home = () => {
             </nav>
 
             {/* Hero Section */}
-            <section className="hero-wrapper pb-5 px-3">
+            <section className="hero-wrapper pb-3 px-3">
                 <div className="container hero-rounded-container position-relative overflow-visible text-white d-flex align-items-center bg-dark" style={{ backgroundImage: `url(${heroBg})`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '650px', borderRadius: '40px' }}>
                     <div className="overlay position-absolute w-100 h-100 rounded-5 bg-black bg-opacity-25" style={{ zIndex: 0, borderRadius: '40px' }}></div>
                     <div className="row w-100 position-relative z-2 ps-lg-5 align-items-center">
@@ -137,16 +137,16 @@ const Home = () => {
             </section>
 
             {/* Spacer for the overlapping cards */}
-            <div style={{ height: '120px' }} className="d-none d-md-block"></div>
+            <div style={{ height: '60px' }} className="d-none d-md-block"></div>
             {/* Mobile spacer removed */}
 
             {/* Who We Are */}
             <section className="section-padding text-center overflow-hidden" id="who-we-are">
                 <div className="container">
                     <h1 className="fw-bold mb-2 display-5">Who We Are</h1>
-                    <p className="text-muted fs-5 mb-5">Leading Integrated Electronic Waste Management Company</p>
+                    <p className="text-muted fs-5 mb-3">Leading Integrated Electronic Waste Management Company</p>
 
-                    <div className="d-flex justify-content-center mt-4">
+                    <div className="d-flex justify-content-center mt-3">
                         <img src={whoWeAreHome} alt="Who We Are Diagram" className="img-fluid" style={{ maxWidth: '1000px', width: '100%' }} />
                     </div>
                 </div>
@@ -155,12 +155,12 @@ const Home = () => {
             {/* Service Highlights */}
             <section className="section-padding bg-light" id="services">
                 <div className="container">
-                    <div className="text-center mb-5">
+                    <div className="text-center mb-4">
                         <h2 className="fw-bold">Service Highlights</h2>
                         <p className="text-muted">To meeting all business needs using our Services</p>
                     </div>
 
-                    <div className="row text-center mb-5">
+                    <div className="row text-center mb-4">
                         <div className="col">
                             <div className="service-icon-box mb-3">
                                 <img src={iconRefurb} alt="" className="img-fluid" style={{ height: '60px' }} />
@@ -227,7 +227,7 @@ const Home = () => {
             <section className="section-padding">
                 <div className="container">
                     <h2 className="fw-bold mb-3 text-center">Why Choose <span className="text-secondary">Blue Planet E-Waste Solutions?</span></h2>
-                    <p className="text-center text-muted mb-5" style={{ textAlign: 'justify' }}>At Blue Planet, we are committed to leading the transition towards a sustainable future through...</p>
+                    <p className="text-center text-muted mb-4" style={{ textAlign: 'justify' }}>At Blue Planet, we are committed to leading the transition towards a sustainable future through...</p>
 
                     <div className="row g-4">
                         <div className="col-md-6">
@@ -277,7 +277,7 @@ const Home = () => {
             {/* Awareness Drive */}
             <section className="section-padding bg-cream" style={{ backgroundColor: '#f9f7f0' }}>
                 <div className="container">
-                    <div className="row align-items-center g-5">
+                    <div className="row align-items-center g-4">
                         <div className="col-lg-6">
                             <div className="row g-4">
                                 {/* Column 1 */}
@@ -338,7 +338,7 @@ const Home = () => {
                 <div className="container text-center">
                     <h5 className="text-muted">Glimpses from</h5>
                     <h2 className="fw-bold mb-2">Our Plant & Facilities</h2>
-                    <p className="text-muted mb-5">Perfect Technology For The Sustainable Processed</p>
+                    <p className="text-muted mb-4">Perfect Technology For The Sustainable Processed</p>
 
                     <div className="row g-4 row-cols-1 row-cols-md-3">
                         <div className="col">
@@ -379,7 +379,7 @@ const Home = () => {
             <section className="section-padding text-center">
                 <div className="container">
                     <h3 className="fw-bold mb-2">Business relations</h3>
-                    <p className="text-muted mb-5">Trusted by the industry's best</p>
+                    <p className="text-muted mb-4">Trusted by the industry's best</p>
                     <div className="d-flex justify-content-center align-items-center flex-wrap gap-5 opacity-75">
                         <img src={client1} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Client 1" />
                         <img src={client2} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Client 2" />
@@ -391,7 +391,7 @@ const Home = () => {
             </section>
 
             {/* Media Section */}
-            <section className="section-padding pb-5">
+            <section className="section-padding pb-3">
                 <div className="container">
                     <div className="row g-4 text-center">
                         <div className="col-md-4">

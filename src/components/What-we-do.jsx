@@ -80,9 +80,9 @@ const WhatWeDo = () => {
 
             {/* Hero Section */}
             {/* Hero Section */}
-            <header className="py-4">
+            <header className="py-2">
                 <div className="container">
-                    <div className="overflow-hidden position-relative rounded-5" style={{ minHeight: '600px' }}>
+                    <div className="overflow-hidden position-relative" style={{ minHeight: '650px', borderRadius: '40px' }}>
                         <div className="position-absolute top-0 start-0 w-100 h-100" style={{ backgroundImage: `url(${page2_bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@ const WhatWeDo = () => {
             {/* Sustainability Section */}
             <section className="section-padding bg-white">
                 <div className="container">
-                    <div className="row align-items-center mb-3 mb-lg-5">
+                    <div className="row align-items-center mb-3">
                         <div className="col-lg-5 text-center mb-4 mb-lg-0 pe-lg-5">
                             <img src={introSprout} alt="Sustainability" className="img-fluid" style={{ maxHeight: '350px' }} />
                         </div>
@@ -104,9 +104,9 @@ const WhatWeDo = () => {
                         </div>
                     </div>
 
-                    <div className="text-center mx-auto mt-3 mt-lg-5" style={{ maxWidth: '900px' }}>
+                    <div className="text-center mx-auto mt-3" style={{ maxWidth: '900px' }}>
                         <h2 className="mb-0 text-dark display-5" style={{ fontWeight: '400' }}>Technology evolves fast.</h2>
-                        <h2 className="mb-4 text-dark display-5 fw-bold">Waste should not.</h2>
+                        <h2 className="mb-3 text-dark display-5 fw-bold">Waste should not.</h2>
                         <p className="text-muted lh-lg px-lg-5" style={{ fontSize: '1.1rem' }}>
                             At Blue Planet E-Waste Solutions, we are building one of India's most advanced and transparent circular ecosystems for electronic waste — enabling organizations to securely recycle, refurbish, and recover value from end-of-life electronic assets while protecting the planet and future generations.
                         </p>
@@ -117,9 +117,9 @@ const WhatWeDo = () => {
             {/* Comprehensive Solutions */}
             <section className="section-padding" style={{ backgroundColor: '#5c9c44' }}>
                 <div className="container">
-                    <h2 className="text-center text-white mb-3 mb-lg-5 display-5"><span className="fw-light">Our</span> <span className="fw-bold">Comprehensive</span> <span className="fw-light">Solutions</span></h2>
+                    <h2 className="text-center text-white mb-3 display-5"><span className="fw-light">Our</span> <span className="fw-bold">Comprehensive</span> <span className="fw-light">Solutions</span></h2>
 
-                    <div className="d-flex flex-column gap-5">
+                    <div className="d-flex flex-column gap-3">
                         {/* Solution 1 */}
                         <div className="row align-items-center">
                             <div className="col-lg-4 col-md-5 mb-4 mb-md-0">
@@ -200,7 +200,7 @@ const WhatWeDo = () => {
             {/* Who We Serve */}
             <section className="section-padding bg-white overflow-hidden">
                 <div className="container text-center">
-                    <h2 className="fw-bold text-dark mb-4">Who We Serve</h2>
+                    <h2 className="fw-bold text-dark mb-3">Who We Serve</h2>
                     <div className="d-flex justify-content-center">
                         <img src={whoWeServeDiagram} alt="Who We Serve" className="img-fluid" style={{ maxWidth: '800px', width: '100%' }} />
                     </div>
@@ -211,9 +211,9 @@ const WhatWeDo = () => {
             <section className="section-padding position-relative overflow-hidden">
                 <div className="position-absolute top-50 start-50 translate-middle w-100 h-100" style={{ backgroundImage: `url(${benefitBg})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', zIndex: -1 }}></div>
                 <div className="container position-relative z-1">
-                    <h2 className="text-center fw-bold mb-3 mb-lg-5">Why Blue Planet <span className="fw-bolder">E-Waste Solutions</span></h2>
+                    <h2 className="text-center fw-bold mb-3">Why Blue Planet <span className="fw-bolder">E-Waste Solutions</span></h2>
 
-                    <div className="row g-4 justify-content-center">
+                    <div className="row g-3 justify-content-center">
                         {/* Our Differentiators */}
                         <div className="col-lg-5">
                             <div className="h-100 rounded-4 overflow-hidden border shadow-sm">
@@ -221,7 +221,7 @@ const WhatWeDo = () => {
                                     <h4 className="fw-bold mb-0">Our Differentiators</h4>
                                 </div>
                                 <div className="p-4 bg-white">
-                                    <ul className="list-unstyled d-flex flex-column gap-4 mb-0">
+                                    <ul className="list-unstyled d-flex flex-column gap-2 mb-0">
                                         <li className="d-flex align-items-center gap-3">
                                             <div style={{ width: '50px', flexShrink: 0 }}><img src={blue1} className="w-100" alt="Certified" /></div>
                                             <div className="fw-medium text-dark">OEM-certified refurbishment & recycling</div>
@@ -258,7 +258,7 @@ const WhatWeDo = () => {
                                     <h4 className="fw-bold mb-0">What They Deliver</h4>
                                 </div>
                                 <div className="p-4 bg-white">
-                                    <ul className="list-unstyled d-flex flex-column gap-4 mb-0">
+                                    <ul className="list-unstyled d-flex flex-column gap-2 mb-0">
                                         <li className="d-flex align-items-center gap-3">
                                             <div style={{ width: '50px', flexShrink: 0 }}><img src={green1} className="w-100" alt="Reliability" /></div>
                                             <div className="fw-medium text-dark">Guaranteed reliability & performance</div>
@@ -302,8 +302,8 @@ const WhatWeDo = () => {
                             </div>
                         </div>
                         <div className="col-lg-7">
-                            <h2 className="fw-bold mb-4">Our <span className="fw-light">Impact</span></h2>
-                            <ul className="list-unstyled d-flex flex-column gap-3 fs-5 fw-light">
+                            <h2 className="fw-bold mb-3">Our <span className="fw-light">Impact</span></h2>
+                            <ul className="list-unstyled d-flex flex-column gap-2 fs-5 fw-light">
                                 <li className="d-flex align-items-start gap-3">
                                     <div className="mt-1" style={{ width: '25px', flexShrink: 0 }}>
                                         <img src={bulletArrow} alt="Bullet" className="w-100" />
@@ -345,7 +345,7 @@ const WhatWeDo = () => {
                 <div className="container">
                     <h4 className="text-muted fw-bold">Together, We Can Build a</h4>
                     <h2 className="display-6 fw-bold">Regenerative Future</h2>
-                    <p className="text-muted small mt-3 mx-auto" style={{ maxWidth: '600px' }}>Every device recycled through Blue Planet E-Waste Solutions is a step toward a cleaner world, a stronger circular economy, and a more resilient earth.</p>
+                    <p className="text-muted small mt-2 mx-auto" style={{ maxWidth: '600px' }}>Every device recycled through Blue Planet E-Waste Solutions is a step toward a cleaner world, a stronger circular economy, and a more resilient earth.</p>
                 </div>
             </section>
 

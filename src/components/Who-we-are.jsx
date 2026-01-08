@@ -96,7 +96,7 @@ const WhatWeDo = () => {
 
             {/* Hero Section */}
             {/* Hero Section */}
-            <header className="what-we-do-hero-section py-4">
+            <header className="what-we-do-hero-section py-2">
                 <div className="container">
                     <div className="overflow-hidden position-relative" style={{ minHeight: '650px', borderRadius: '40px' }}>
                         <div className="position-absolute top-0 start-0 w-100 h-100" style={{ backgroundImage: `url(${page2_bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
@@ -111,7 +111,7 @@ const WhatWeDo = () => {
             {/* Intro Quote Section */}
             <section className="bg-white section-padding">
                 <div className="container">
-                    <div className="d-flex justify-content-center align-items-center mb-4 gap-4">
+                    <div className="d-flex justify-content-center align-items-center mb-3 gap-4">
                         <div className="me-2">
                             <img src={recycleIcon} alt="Recycle" style={{ height: '120px', width: 'auto' }} />
                         </div>
@@ -123,7 +123,7 @@ const WhatWeDo = () => {
                         </div>
                     </div>
 
-                    <div className="d-flex justify-content-center mb-3 mb-lg-5">
+                    <div className="d-flex justify-content-center mb-3 mb-lg-4">
                         <div style={{ width: '400px', height: '1px', backgroundColor: '#e0e0e0' }}></div>
                     </div>
 
@@ -152,9 +152,9 @@ const WhatWeDo = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-5 mb-3 mb-lg-0">
                             <h2 className="fw-light mb-0 h3">What is</h2>
-                            <h2 className="fw-bold display-4 mb-4">E-Waste Recycling?</h2>
+                            <h2 className="fw-bold display-4 mb-3">E-Waste Recycling?</h2>
                             <p className="opacity-90 mb-4 me-lg-4" style={{ lineHeight: '1.7', fontSize: '0.95rem', textAlign: 'justify' }}>E-waste recycling is the structured process of recovering usable components, extracting precious materials, upcycling resources, and safely treating hazardous elements from end-of-life electronic products. Instead of discarding equipment into landfills, recycling enables:</p>
-                            <ul className="list-unstyled d-flex flex-column gap-3 opacity-100 mt-4">
+                            <ul className="list-unstyled d-flex flex-column gap-3 opacity-100 mt-3">
                                 <li className="d-flex align-items-start gap-3">
                                     <img src={bulletArrow} alt="" style={{ width: '20px', marginTop: '4px' }} />
                                     <span style={{ fontSize: '0.95rem' }}>Reduction in mining and resource extraction</span>
@@ -186,7 +186,7 @@ const WhatWeDo = () => {
             <section className="section-padding">
                 <div className="container text-center">
                     <h2 className="mb-2 display-5" style={{ fontWeight: '500' }}>What <span className="fw-bolder">We Recycle</span></h2>
-                    <p className="text-muted mb-3 mb-lg-5" style={{ fontSize: '1.2rem', opacity: 0.6 }}>We provide comprehensive recycling for:</p>
+                    <p className="text-muted mb-3 mb-lg-4" style={{ fontSize: '1.2rem', opacity: 0.6 }}>We provide comprehensive recycling for:</p>
 
                     <div className="row justify-content-center">
                         {/* IT Assets */}
@@ -230,7 +230,7 @@ const WhatWeDo = () => {
 
 
             {/* Process Diagram Section */}
-            <section className="section-padding bg-white pt-5">
+            <section className="section-padding bg-white">
                 <div className="container d-flex justify-content-center align-items-center">
                     <img src={fullProcessDiagram} alt="E-waste Process Flow" className="img-fluid" style={{ maxWidth: '1000px', width: '100%' }} />
                 </div>
@@ -238,8 +238,8 @@ const WhatWeDo = () => {
 
             <section className="section-padding bg-light">
                 <div className="container">
-                    <h2 className="text-center fw-bold mb-3 mb-lg-5">Key <span className="fw-bolder">Benefits</span></h2>
-                    <div className="row g-4">
+                    <h2 className="text-center fw-bold mb-3">Key <span className="fw-bolder">Benefits</span></h2>
+                    <div className="row g-3">
                         <div className="col-md-4">
                             <div className="bg-white rounded-4 h-100 shadow-sm overflow-hidden">
                                 <div style={{ height: '200px', overflow: 'hidden' }}>
@@ -314,7 +314,7 @@ const WhatWeDo = () => {
             <section className="section-padding position-relative overflow-hidden">
                 <div className="position-absolute top-50 start-50 translate-middle w-100 h-100" style={{ backgroundImage: `url(${benefitBg})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', zIndex: -1 }}></div>
                 <div className="container position-relative z-1">
-                    <h2 className="text-center fw-bold mb-3 mb-lg-5">Why Blue Planet <span className="fw-bolder">E-Waste Solutions</span></h2>
+                    <h2 className="text-center fw-bold mb-3">Why Blue Planet <span className="fw-bolder">E-Waste Solutions</span></h2>
 
                     <div className="row g-4 justify-content-center">
                         {/* Blue Planet Advantage Card */}
@@ -324,7 +324,7 @@ const WhatWeDo = () => {
                                     <h4 className="fw-bold mb-0">Blue Planet Advantage</h4>
                                 </div>
                                 <div className="p-4 bg-white">
-                                    <ul className="list-unstyled d-flex flex-column gap-4 mb-0">
+                                    <ul className="list-unstyled d-flex flex-column gap-2 mb-0">
                                         <li className="d-flex align-items-center gap-3">
                                             <div style={{ width: '50px', flexShrink: 0 }}><img src={blue1} className="w-100" alt="Certified" /></div>
                                             <div className="fw-medium text-dark">Certified, compliant, world-class recycling</div>
@@ -357,7 +357,7 @@ const WhatWeDo = () => {
                                     <h4 className="fw-bold mb-0">What It Means</h4>
                                 </div>
                                 <div className="p-4 bg-white">
-                                    <ul className="list-unstyled d-flex flex-column gap-4 mb-0">
+                                    <ul className="list-unstyled d-flex flex-column gap-2 mb-0">
                                         <li className="d-flex align-items-center gap-3">
                                             <div style={{ width: '50px', flexShrink: 0 }}><img src={green1} className="w-100" alt="ISO" /></div>
                                             <div className="fw-medium text-dark">ISO 9001, ISO 14001, ISO 45001</div>
@@ -386,7 +386,7 @@ const WhatWeDo = () => {
             <section className="section-padding text-center">
                 <div className="container">
                     <h3 className="fw-bold text-muted mb-2">Start your E-waste</h3>
-                    <h2 className="fw-bold mb-4 display-6">Recycling, Refurbishment & IT Service Journey</h2>
+                    <h2 className="fw-bold mb-3 display-6">Recycling, Refurbishment & IT Service Journey</h2>
                     <p className="text-muted small">Together, we can turn waste into opportunity and build a cleaner future.</p>
                 </div>
             </section>
