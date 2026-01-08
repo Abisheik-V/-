@@ -26,7 +26,7 @@ import recycleItAssets from '../assets/images/recycle_it_assets.png';
 import recycleHomeAppliances from '../assets/images/recycle_home_appliances.png';
 import recycleIndustrial from '../assets/images/recycle_industrial.png';
 import processFrame from '../assets/images/process_frame.png';
-import fullProcessDiagram from '../assets/images/full_process_diagram.png';
+import fullProcessDiagram from '../assets/images/process_diagram_full.png';
 import processCollect from '../assets/images/process_collect.png';
 import iconRefurb from '../assets/images/icon_refurb.png';
 import iconRepair from '../assets/images/icon_repair.png';
@@ -183,7 +183,7 @@ const WhatWeDo = () => {
             </section>
 
             {/* What We Recycle */}
-            <section className="section-padding">
+            <section className="section-padding pb-0">
                 <div className="container text-center">
                     <h2 className="mb-2 display-5" style={{ fontWeight: '500' }}>What <span className="fw-bolder">We Recycle</span></h2>
                     <p className="text-muted mb-3 mb-lg-4" style={{ fontSize: '1.2rem', opacity: 0.6 }}>We provide comprehensive recycling for:</p>
@@ -230,13 +230,13 @@ const WhatWeDo = () => {
 
 
             {/* Process Diagram Section */}
-            <section className="section-padding bg-white">
+            <section className="section-padding pt-0 pb-0 bg-white">
                 <div className="container d-flex justify-content-center align-items-center">
                     <img src={fullProcessDiagram} alt="E-waste Process Flow" className="img-fluid" style={{ maxWidth: '1000px', width: '100%' }} />
                 </div>
             </section>
 
-            <section className="section-padding bg-light">
+            <section className="section-padding pt-0 pb-4 bg-light">
                 <div className="container">
                     <h2 className="text-center fw-bold mb-3">Key <span className="fw-bolder">Benefits</span></h2>
                     <div className="row g-3">
@@ -311,7 +311,7 @@ const WhatWeDo = () => {
             </section>
 
             {/* Blue Planet Advantage Table */}
-            <section className="section-padding position-relative overflow-hidden">
+            <section className="section-padding pt-0 pb-0 position-relative overflow-hidden">
                 <div className="position-absolute top-50 start-50 translate-middle w-100 h-100" style={{ backgroundImage: `url(${benefitBg})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', zIndex: -1 }}></div>
                 <div className="container position-relative z-1">
                     <h2 className="text-center fw-bold mb-3">Why Blue Planet <span className="fw-bolder">E-Waste Solutions</span></h2>
@@ -383,7 +383,7 @@ const WhatWeDo = () => {
             </section>
 
             {/* CTA */}
-            <section className="section-padding text-center">
+            <section className="section-padding pt-4 pb-0 text-center">
                 <div className="container">
                     <h3 className="fw-bold text-muted mb-2">Start your E-waste</h3>
                     <h2 className="fw-bold mb-3 display-6">Recycling, Refurbishment & IT Service Journey</h2>

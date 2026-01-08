@@ -198,7 +198,7 @@ const WhatWeDo = () => {
             </section>
 
             {/* Who We Serve */}
-            <section className="section-padding bg-white overflow-hidden">
+            <section className="section-padding pb-0 bg-white overflow-hidden">
                 <div className="container text-center">
                     <h2 className="fw-bold text-dark mb-3">Who We Serve</h2>
                     <div className="d-flex justify-content-center">
@@ -208,7 +208,7 @@ const WhatWeDo = () => {
             </section>
 
             {/* Differentatiors & Deliverables */}
-            <section className="section-padding position-relative overflow-hidden">
+            <section className="section-padding pt-0 position-relative overflow-hidden">
                 <div className="position-absolute top-50 start-50 translate-middle w-100 h-100" style={{ backgroundImage: `url(${benefitBg})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', zIndex: -1 }}></div>
                 <div className="container position-relative z-1">
                     <h2 className="text-center fw-bold mb-3">Why Blue Planet <span className="fw-bolder">E-Waste Solutions</span></h2>
@@ -341,7 +341,7 @@ const WhatWeDo = () => {
             </section>
 
             {/* Bottom Contact/Footer Banner */}
-            <section className="section-padding bg-white text-center">
+            <section className="section-padding pt-4 pb-0 bg-white text-center">
                 <div className="container">
                     <h4 className="text-muted fw-bold">Together, We Can Build a</h4>
                     <h2 className="display-6 fw-bold">Regenerative Future</h2>

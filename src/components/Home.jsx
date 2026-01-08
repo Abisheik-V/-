@@ -25,7 +25,7 @@ import plant5 from '../assets/images/plant_5.png';
 import plant6 from '../assets/images/plant_6.png';
 import placeHolder from '../assets/images/logo_placeholder.png';
 import whoWeAreBg from '../assets/images/who_we_are_bg.png';
-import whoWeAreHome from '../assets/images/who_we_are_home.png';
+import whoWeAreDiagramV2 from '../assets/images/who_we_are_diagram_v2.png';
 import iconRefurb from '../assets/images/icon_refurb.png';
 import iconprecious from '../assets/images/icon_precious.png';
 import iconcarbon from '../assets/images/icon_carbon.png';
@@ -141,21 +141,21 @@ const Home = () => {
             {/* Mobile spacer removed */}
 
             {/* Who We Are */}
-            <section className="section-padding text-center overflow-hidden" id="who-we-are">
+            <section className="section-padding pb-0 text-center overflow-hidden" id="who-we-are">
                 <div className="container">
                     <h1 className="fw-bold mb-2 display-5">Who We Are</h1>
                     <p className="text-muted fs-5 mb-3">Leading Integrated Electronic Waste Management Company</p>
 
-                    <div className="d-flex justify-content-center mt-3">
-                        <img src={whoWeAreHome} alt="Who We Are Diagram" className="img-fluid" style={{ maxWidth: '1000px', width: '100%' }} />
+                    <div className="d-flex justify-content-center">
+                        <img src={whoWeAreDiagramV2} alt="Who We Are Diagram" className="img-fluid" style={{ maxWidth: '1000px', width: '100%' }} />
                     </div>
                 </div>
             </section>
 
             {/* Service Highlights */}
-            <section className="section-padding bg-light" id="services">
+            <section className="section-padding pt-0 bg-light" id="services">
                 <div className="container">
-                    <div className="text-center mb-4">
+                    <div className="text-center mb-2">
                         <h2 className="fw-bold">Service Highlights</h2>
                         <p className="text-muted">To meeting all business needs using our Services</p>
                     </div>

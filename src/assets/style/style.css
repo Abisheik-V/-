@@ -445,13 +445,5 @@ body {
         padding: 15px 0;
     }
 
-    /* Further reduce gap specifically between Who We Are and Services */
-    #who-we-are {
-        padding-bottom: 20px !important;
-        padding-top: 20px !important;
-    }
 
-    #services {
-        padding-top: 20px !important;
-    }
 }
