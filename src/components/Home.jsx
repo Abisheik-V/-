@@ -25,6 +25,7 @@ import plant5 from '../assets/images/plant_5.png';
 import plant6 from '../assets/images/plant_6.png';
 import placeHolder from '../assets/images/logo_placeholder.png';
 import whoWeAreBg from '../assets/images/who_we_are_bg.png';
+import whoWeAreHome from '../assets/images/who_we_are_home.png';
 import iconRefurb from '../assets/images/icon_refurb.png';
 import iconprecious from '../assets/images/icon_precious.png';
 import iconcarbon from '../assets/images/icon_carbon.png';
@@ -145,53 +146,8 @@ const Home = () => {
                     <h1 className="fw-bold mb-2 display-5">Who We Are</h1>
                     <p className="text-muted fs-5 mb-5">Leading Integrated Electronic Waste Management Company</p>
 
-                    <div className="who-we-are-diagram position-relative mt-4" style={{ minHeight: '350px' }}>
-                        {/* Center Label */}
-                        <div className="who-we-are-diagram position-relative mt-5 d-flex justify-content-center">
-                            <img src={whoWeAreBg} alt="Who We Are Diagram" className="img-fluid d-none d-lg-block" style={{ maxWidth: '1000px', height: '300px', marginTop: '60px' }} />
-
-                            {/* Mobile View / Fallback (simplified) */}
-                            <div className="d-lg-none d-flex flex-column gap-4">
-                                <div className="text-center">
-                                    <h6 className="fw-bold mb-2">Refurbishment &<br />End-to-End Recycling Solutions</h6>
-                                    <i className="bi bi-fan fs-1 text-success"></i>
-                                </div>
-                                <div className="text-center">
-                                    <h6 className="fw-bold mb-2">Who We Are!<br />New Age Recyclers</h6>
-                                    <i className="bi bi-brightness-alt-high fs-1 text-success"></i>
-                                </div>
-                                <div className="text-center">
-                                    <h6 className="fw-bold mb-2">Our Goal!<br />Environmental Sustainability</h6>
-                                    <i className="bi bi-lightning-charge fs-1 text-success"></i>
-                                </div>
-                            </div>
-
-                            {/* Desktop Overlay - Top */}
-                            <div className="position-absolute d-none d-lg-flex flex-column align-items-center overlay-top">
-                                <h4 className="fw-bold mb-4 text-dark text-nowrap text-center" style={{ top: '-60px' }}>Refurbishment &<br />End-to-End Recycling Solutions</h4>
-                                <div className="icon-circle bg-white rounded-circle shadow-sm d-flex align-items-center justify-content-center position-relative" style={{ top: '-55px', right: '-9px' }}>
-                                    <i className="bi bi-fan fs-1 text-success"></i>
-                                </div>
-                            </div>
-
-                            {/* Desktop Overlay - Left */}
-                            <div className="position-absolute d-none d-lg-flex align-items-center overlay-left">
-                                <h5 className="fw-bold text-end mb-0 text-dark me-3">Who We Are!<br />New Age Recyclers</h5>
-                                <div className="connector-line bg-success" style={{ left: '-20px' }}></div>
-                                <div className="icon-circle bg-white rounded-circle shadow-sm d-flex align-items-center justify-content-center position-relative" style={{ top: '-30px', right: '40px', left: '-20px' }}>
-                                    <i className="bi bi-brightness-alt-high fs-1 text-success"></i>
-                                </div>
-                            </div>
-
-                            {/* Desktop Overlay - Right */}
-                            <div className="position-absolute d-none d-lg-flex align-items-center overlay-right">
-                                <div className="icon-circle bg-white rounded-circle shadow-sm d-flex align-items-center justify-content-center position-relative" style={{ top: '-30px', left: '110px' }}>
-                                    <i className="bi bi-lightning-charge fs-1 text-success"></i>
-                                </div>
-                                <div className="connector-line bg-success"></div>
-                                <h5 className="fw-bold text-start mb-0 text-dark position-relative" style={{ left: '110px' }}>Our Goal!<br />Environmental Sustainability</h5>
-                            </div>
-                        </div>
+                    <div className="d-flex justify-content-center mt-4">
+                        <img src={whoWeAreHome} alt="Who We Are Diagram" className="img-fluid" style={{ maxWidth: '1000px', width: '100%' }} />
                     </div>
                 </div>
             </section>
