@@ -46,6 +46,17 @@ body {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
+.hero-title {
+    font-size: 3rem;
+    margin-top: -190px;
+    margin-left: 100px;
+}
+
+.hero-demo-btn {
+    font-size: 1.25rem;
+    margin-left: -160px;
+}
+
 /* Floating Stats */
 .hero-rounded-container .row .col-lg-3 .bg-white {
     transition: transform 0.3s ease;
@@ -434,9 +445,12 @@ body {
 @media (max-width: 991px) {
 
     /* Reduce Hero Title Size */
-    .hero-wrapper h1 {
+    .hero-title {
         font-size: 2.2rem;
-        /* Further reduced for better fit */
+        margin-top: 0;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     /* Reset Hero Button for Mobile */
@@ -445,6 +459,18 @@ body {
         margin-top: 20px !important;
         width: 100%;
         max-width: 300px;
+        font-size: 1rem !important;
+        display: block;
+        margin: 20px auto 0 auto !important;
+    }
+
+    /* Override inline styles for Hero Title */
+    .hero-wrapper h1 {
+        font-size: 2.2rem !important;
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+        text-align: center !important;
+        margin-bottom: 20px;
     }
 
     /* Business Relations Mobile Fix */
@@ -455,10 +481,19 @@ body {
     }
 
     /* Reset vertical height constraint on mobile to allow natural flow */
-    .hero-wrapper .min-vh-100 {
+    .hero-rounded-container {
         min-height: auto !important;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        height: auto !important;
+        padding: 40px 20px !important;
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+
+    /* Center the column content */
+    .hero-rounded-container .col-lg-7 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     /* Adjust wrapper spacing */
@@ -467,7 +502,6 @@ body {
     }
 
     /* Refactor Floating Stats to be Static on Mobile */
-    /* Targeting by class is sufficient now since we removed the specific selector override above */
     .hero-stats-container {
         position: static !important;
         transform: none !important;
@@ -489,6 +523,4 @@ body {
     .section-padding {
         padding: 15px 0;
     }
-
-
 }
