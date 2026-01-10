@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
@@ -36,8 +36,15 @@ import client2 from '../assets/images/client2.png';
 import client3 from '../assets/images/client3.png';
 import client4 from '../assets/images/client4.png';
 import client5 from '../assets/images/client5.png';
+import navSearch from '../assets/images/nav_search.png';
+import navMenu from '../assets/images/nav_menu.png';
+import mediaPress from '../assets/images/media_press.png';
+import mediaPodcast from '../assets/images/media_podcast.png';
+import mediaFeatured from '../assets/images/media_featured.png';
 
 const Home = () => {
+    const [activeVideo, setActiveVideo] = useState(null);
+
     useEffect(() => {
         AOS.init({
             duration: 1000,
@@ -48,34 +55,36 @@ const Home = () => {
     return (
         <div className="home-container">
             {/* Navbar */}
-            <nav className="navbar navbar-expand-lg navbar-light bg-white py-4 position-relative">
+            <nav className="navbar navbar-expand-lg navbar-light bg-white py-2 position-relative">
                 <div className="container">
                     <Link className="navbar-brand" to="/">
-                        <img src={placeHolder} alt="BluePlanet" height="60" />
+                        <img src={placeHolder} alt="BluePlanet" />
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav ms-auto align-items-center gap-4 fw-bolder">
-                            <li className="nav-item"><Link className="nav-link text-dark" to="/">Home</Link></li>
-                            <li className="nav-item"><Link className="nav-link text-dark" to="/who-we-are">Who we are</Link></li>
+                        <ul className="navbar-nav ms-auto align-items-center gap-4">
+                            <li className="nav-item"><Link className="nav-link text-dark fw-bold-50" to="/">Home</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-dark fw-bold-50" to="/who-we-are">Who We Are</Link></li>
                             <li className="nav-item position-relative">
-                                <Link className="nav-link text-dark" to="/what-we-do">Services</Link>
-                                <div className="services-dropdown d-flex flex-column align-items-center position-absolute start-50 translate-middle-x">
-                                    <div className="dropdown-line"></div>
-                                    <div className="bg-white border text-center p-2 rounded-1 shadow-sm lh-sm text-muted dropdown-content">
-                                        <span className="fw-bold text-dark">What We Do,</span> E-Waste Recycling,<br />Refurbishment, precious metal Recovery
-                                    </div>
+                                <Link className="nav-link text-dark fw-bold-50" to="/what-we-do">Services</Link>
+                                <div className="services-dropdown position-absolute start-50 translate-middle-x">
+                                    <ul className="dropdown-menu-custom">
+                                        <li><Link className="dropdown-item-custom" to="/what-we-do">What We Do</Link></li>
+                                        <li><Link className="dropdown-item-custom" to="/e-waste-recycling">E-Waste Recycling</Link></li>
+                                        <li><Link className="dropdown-item-custom" to="/refurbishment">Refurbishment</Link></li>
+                                        <li><Link className="dropdown-item-custom" to="/precious-metals">Precious Metal Recovery</Link></li>
+                                    </ul>
                                 </div>
                             </li>
-                            <li className="nav-item"><Link className="nav-link text-dark" to="/#sustainability">Sustainability</Link></li>
-                            <li className="nav-item"><Link className="nav-link text-dark" to="/#features">Feature</Link></li>
-                            <li className="nav-item"><Link className="nav-link text-dark" to="/#contact">Contact</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-dark fw-bold-50" to="/#sustainability">Sustainability</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-dark fw-bold-50" to="/#features">Feature</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-dark fw-bold-50" to="/#contact">Contact</Link></li>
                         </ul>
                         <div className="d-flex align-items-center gap-3 ms-lg-5">
-                            <i className="bi bi-search fs-4 cursor-pointer"></i>
-                            <i className="bi bi-list fs-2 cursor-pointer fw-bold"></i>
+                            <img src={navSearch} alt="Search" className="cursor-pointer" style={{ height: '30px', width: 'auto' }} />
+                            <img src={navMenu} alt="Menu" className="cursor-pointer" style={{ height: '30px', width: 'auto' }} />
                         </div>
                     </div>
                 </div>
@@ -85,10 +94,10 @@ const Home = () => {
             <section className="hero-wrapper pb-3 px-3">
                 <div className="container hero-rounded-container position-relative overflow-visible text-white d-flex align-items-center bg-dark" style={{ backgroundImage: `url(${heroBg})`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '650px', borderRadius: '40px' }}>
                     <div className="overlay position-absolute w-100 h-100 rounded-5 bg-black bg-opacity-25" style={{ zIndex: 0, borderRadius: '40px' }}></div>
-                    <div className="row w-100 position-relative z-2 ps-lg-5 align-items-center">
-                        <div className="col-lg-7 ps-lg-5">
-                            <h1 className="display-3 fw-bold mb-4 lh-sm text-center">Leading the Charge<br />in Sustainable<br />E-Waste Solutions</h1>
-                            <button className="btn btn-light rounded-pill px-5 py-3 fw-bold text-dark mt-2 shadow">Request a Demo</button>
+                    <div className="row w-100 position-relative z-2 ps-lg-4 align-items-center">
+                        <div className="col-lg-7">
+                            <h1 className="display-3 fw-bold mb-4 lh-sm text-start">Leading the Charge<br />in Sustainable<br />E-Waste Solutions</h1>
+                            <button className="btn btn-light rounded-4 px-5 py-3 text-dark mt-4 shadow" style={{ fontSize: '1.25rem', marginLeft: '-380px', marginTop: '-300px' }}>Request a Demo</button>
                         </div>
 
                         {/* Visual marker "Hidden Materials" */}
@@ -108,27 +117,27 @@ const Home = () => {
                     <div className="container position-absolute start-50 top-100 translate-middle hero-stats-container" style={{ zIndex: 10 }}>
                         <div className="row g-4 justify-content-center px-lg-5">
                             <div className="col-lg-3 col-md-6">
-                                <div className="bg-white text-center p-4 rounded-4 shadow-lg h-100">
-                                    <h2 className="text-success fw-bold mb-2">15+</h2>
-                                    <p className="fw-bold text-muted lh-sm mb-0">Metal Variant<br />Recovery</p>
+                                <div className="bg-white text-center p-3 rounded-4 shadow-lg h-100" style={{ borderRadius: '30px' }}>
+                                    <h2 className="fw-bold mb-2" style={{ color: '#5c9c44' }}>15+</h2>
+                                    <p className="fw-bold text-secondary lh-sm mb-0">Metal Variant<br />Recovery</p>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-6">
-                                <div className="bg-white text-center p-4 rounded-4 shadow-lg h-100">
-                                    <h2 className="text-success fw-bold mb-2">40,000 MT</h2>
-                                    <p className="fw-bold text-muted lh-sm mb-0">Scalable Landfill<br />to Recycling</p>
+                                <div className="bg-white text-center p-3 rounded-4 shadow-lg h-100" style={{ borderRadius: '30px' }}>
+                                    <h2 className="fw-bold mb-2" style={{ color: '#5c9c44' }}>40,000 MT</h2>
+                                    <p className="fw-bold text-secondary lh-sm mb-0">Scalable Landfill<br />to Recycling</p>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-6">
-                                <div className="bg-white text-center p-4 rounded-4 shadow-lg h-100">
-                                    <h2 className="text-success fw-bold mb-2">120 MT</h2>
-                                    <p className="fw-bold text-muted lh-sm mb-0">Hazardous Waste<br />Disposal</p>
+                                <div className="bg-white text-center p-3 rounded-4 shadow-lg h-100" style={{ borderRadius: '30px' }}>
+                                    <h2 className="fw-bold mb-2" style={{ color: '#5c9c44' }}>120 MT</h2>
+                                    <p className="fw-bold text-secondary lh-sm mb-0">Hazardous Waste<br />Disposal</p>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-6">
-                                <div className="bg-white text-center p-4 rounded-4 shadow-lg h-100">
-                                    <h2 className="text-success fw-bold mb-2">100%</h2>
-                                    <p className="fw-bold text-muted lh-sm mb-0">Environment<br />Protection</p>
+                                <div className="bg-white text-center p-3 rounded-4 shadow-lg h-100" style={{ borderRadius: '30px' }}>
+                                    <h2 className="fw-bold mb-2" style={{ color: '#5c9c44' }}>100%</h2>
+                                    <p className="fw-bold text-secondary lh-sm mb-0">Environment<br />Protection</p>
                                 </div>
                             </div>
                         </div>
@@ -143,8 +152,8 @@ const Home = () => {
             {/* Who We Are */}
             <section className="section-padding pb-3 text-center overflow-hidden" id="who-we-are">
                 <div className="container">
-                    <h1 className="fw-bold mb-2 display-5">Who We Are</h1>
-                    <p className="text-muted fs-5 mb-3">Leading Integrated Electronic Waste Management Company</p>
+                    <h1 className="fw-bold mb-2 display-5 text-dark">Who We Are</h1>
+                    <p className="text-secondary fs-3 fw-light mb-4" style={{ fontFamily: 'Arial, sans-serif' }}>Leading Integrated Electronic Waste Management Company</p>
 
                     <div className="d-flex justify-content-center">
                         <img src={whoWeAreDiagramV2} alt="Who We Are Diagram" className="img-fluid" style={{ maxWidth: '1000px', width: '100%' }} />
@@ -153,43 +162,43 @@ const Home = () => {
             </section>
 
             {/* Service Highlights */}
-            <section className="section-padding pt-0 bg-light" id="services">
+            <section className="section-padding pt-0 pb-4" id="services">
                 <div className="container">
-                    <div className="text-center mb-2">
-                        <h2 className="fw-bold">Service Highlights</h2>
-                        <p className="text-muted">To meeting all business needs using our Services</p>
+                    <div className="text-center mb-3">
+                        <h2 className="fw-bold display-6 mb-2">Service Highlights</h2>
+                        <p className="text-muted fs-5 mb-0">Try variety of benefits when using our Service</p>
                     </div>
 
-                    <div className="row text-center mb-4">
-                        <div className="col">
-                            <div className="service-icon-box mb-3">
-                                <img src={iconRefurb} alt="" className="img-fluid" style={{ height: '60px' }} />
+                    <div className="row text-center mb-4 justify-content-center">
+                        <div className="col-lg-2 col-md-4 col-6 mb-4">
+                            <div className="service-icon-box mb-2">
+                                <img src={iconRefurb} alt="" className="img-fluid" style={{ height: '50px' }} />
                             </div>
-                            <h6>Refurbishment and Recycling</h6>
+                            <h6 className="fw-bold">Refurbishment and<br />Recycling</h6>
                         </div>
-                        <div className="col">
-                            <div className="service-icon-box mb-3">
-                                <img src={iconrepair} alt="" className="img-fluid" style={{ height: '60px' }} />
+                        <div className="col-lg-2 col-md-4 col-6 mb-4">
+                            <div className="service-icon-box mb-2">
+                                <img src={iconrepair} alt="" className="img-fluid" style={{ height: '50px' }} />
                             </div>
-                            <h6>Repair as a Service</h6>
+                            <h6 className="fw-bold">Repair as a<br />Service</h6>
                         </div>
-                        <div className="col">
-                            <div className="service-icon-box mb-3">
-                                <img src={iconprecious} alt="" className="img-fluid" style={{ height: '60px' }} />
+                        <div className="col-lg-2 col-md-4 col-6 mb-4">
+                            <div className="service-icon-box mb-2">
+                                <img src={iconprecious} alt="" className="img-fluid" style={{ height: '50px' }} />
                             </div>
-                            <h6>Precious Metals Recovery</h6>
+                            <h6 className="fw-bold">Precious Metals<br />Recovery</h6>
                         </div>
-                        <div className="col">
-                            <div className="service-icon-box mb-3">
-                                <img src={iconcarbon} alt="" className="img-fluid" style={{ height: '60px' }} />
+                        <div className="col-lg-2 col-md-4 col-6 mb-4">
+                            <div className="service-icon-box mb-2">
+                                <img src={iconcarbon} alt="" className="img-fluid" style={{ height: '50px' }} />
                             </div>
-                            <h6>Carbon Credits</h6>
+                            <h6 className="fw-bold">Carbon<br />Credits</h6>
                         </div>
-                        <div className="col">
-                            <div className="service-icon-box mb-3">
-                                <img src={iconupcycle} alt="" className="img-fluid" style={{ height: '60px' }} />
+                        <div className="col-lg-2 col-md-4 col-6 mb-4">
+                            <div className="service-icon-box mb-2">
+                                <img src={iconupcycle} alt="" className="img-fluid" style={{ height: '50px' }} />
                             </div>
-                            <h6>Upcycling</h6>
+                            <h6 className="fw-bold">Upcycling</h6>
                         </div>
                     </div>
 
@@ -213,9 +222,7 @@ const Home = () => {
                             <div className="service-img-card rounded-4 overflow-hidden position-relative">
                                 <img src={service4} className="w-100 object-fit-cover" height="300" alt="Service 4" />
                                 <div className="position-absolute top-50 start-50 translate-middle text-center text-white">
-                                    <div className="bg-success rounded-circle p-4 d-inline-block shadow-lg">
-                                        <h4 className="m-0">CARBON<br />CREDITS</h4>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -224,14 +231,14 @@ const Home = () => {
             </section>
 
             {/* Why Choose Us */}
-            <section className="section-padding">
+            <section className="section-padding pt-0">
                 <div className="container">
-                    <h2 className="fw-bold mb-3 text-center">Why Choose <span className="text-secondary">Blue Planet E-Waste Solutions?</span></h2>
-                    <p className="text-center text-muted mb-4" style={{ textAlign: 'justify' }}>At Blue Planet, we are committed to leading the transition towards a sustainable future through...</p>
+                    <h2 className="mb-3 text-center">Why Choose <span className="fw-bold">Blue Planet E-Waste Solutions?</span></h2>
+                    <p className="text-center text-muted mb-5">At Blue Planet, we are committed to leading the transition towards a sustainable future through:</p>
 
                     <div className="row g-4">
                         <div className="col-md-6">
-                            <div className="choice-card p-4 border rounded-5 shadow-sm hover-shadow h-100 bg-white">
+                            <div className="choice-card p-4 rounded-5 shadow-sm hover-shadow h-100 bg-white text-start">
                                 <div className="mb-4 overflow-hidden rounded-4">
                                     <img src={why1} className="w-100 object-fit-cover" height="200" alt="Circular Economy Approach" />
                                 </div>
@@ -241,7 +248,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-md-6">
-                            <div className="choice-card p-4 border rounded-5 shadow-sm hover-shadow h-100 bg-white">
+                            <div className="choice-card p-4 rounded-5 shadow-sm hover-shadow h-100 bg-white text-start">
                                 <div className="mb-4 overflow-hidden rounded-4">
                                     <img src={why2} className="w-100 object-fit-cover" height="200" alt="Compliance and Transparency" />
                                 </div>
@@ -251,7 +258,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-md-6">
-                            <div className="choice-card p-4 border rounded-5 shadow-sm hover-shadow h-100 bg-white">
+                            <div className="choice-card p-4 rounded-5 shadow-sm hover-shadow h-100 bg-white text-start">
                                 <div className="mb-4 overflow-hidden rounded-4">
                                     <img src={why3} className="w-100 object-fit-cover" height="200" alt="Traceability" />
                                 </div>
@@ -261,7 +268,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-md-6">
-                            <div className="choice-card p-4 border rounded-5 shadow-sm hover-shadow h-100 bg-white">
+                            <div className="choice-card p-4 rounded-5 shadow-sm hover-shadow h-100 bg-white text-start">
                                 <div className="mb-4 overflow-hidden rounded-4">
                                     <img src={why4} className="w-100 object-fit-cover" height="200" alt="Secure and Ethical Solutions" />
                                 </div>
@@ -277,36 +284,43 @@ const Home = () => {
             {/* Awareness Drive */}
             <section className="section-padding bg-cream" style={{ backgroundColor: '#f9f7f0' }}>
                 <div className="container">
-                    <div className="row align-items-center g-4">
+                    <div className="row align-items-center g-5">
                         <div className="col-lg-6">
                             <div className="row g-4">
                                 {/* Column 1 */}
                                 <div className="col-6 d-flex flex-column gap-4">
-                                    <div className="overflow-hidden rounded-custom shadow-sm" style={{ height: '240px' }}>
+                                    <div className="overflow-hidden rounded-4 shadow-sm" style={{ height: '220px' }}>
                                         <img src={awareness1} className="img-fluid w-100 h-100 object-fit-cover" alt="Recycle Sign" />
                                     </div>
-                                    <div className="overflow-hidden rounded-custom shadow-sm" style={{ height: '380px' }}>
+                                    <div className="overflow-hidden rounded-4 shadow-sm" style={{ height: '300px' }}>
                                         <img src={drive2} className="img-fluid w-100 h-100 object-fit-cover" alt="Event Booth" />
                                     </div>
                                 </div>
                                 {/* Column 2 */}
                                 <div className="col-6 d-flex flex-column gap-4">
-                                    <div className="overflow-hidden rounded-custom shadow-sm" style={{ height: '340px' }}>
+                                    <div className="overflow-hidden rounded-4 shadow-sm" style={{ height: '300px' }}>
                                         <img src={drive3} className="img-fluid w-100 h-100 object-fit-cover" alt="Award Handover" />
                                     </div>
-                                    <div className="stat-box-green rounded-custom p-4 shadow-sm" style={{ height: '280px' }}>
+                                    <div className="bg-success rounded-4 p-4 d-flex flex-column justify-content-center align-items-center text-center text-white shadow-sm" style={{ height: '220px', backgroundColor: 'rgba(109, 230, 66, 1)' }}>
                                         <h2 className="fw-bold display-4 mb-2">10000k</h2>
-                                        <p className="small lh-sm mb-0 px-2 opacity-90">Kids and families now have access to technology because of our joint efforts</p>
+                                        <p className="small lh-sm mb-0">Kids and families now have access to technology because of our joint efforts</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-6 ps-lg-5">
-                            <h2 className="fw-bold awareness-title mb-4">Join us in making<br />the world a <span className="fw-bolder">better<br />place</span></h2>
-                            <div className="awareness-divider" style={{ opacity: 1, backgroundColor: '#b0bec5' }}></div>
+                            <h2 className="display-5 mb-3" style={{ fontWeight: '500', color: '#000', textAlign: 'left' }}>
+                                Join us in making<br />
+                                the world a <span className="fw-bold">better</span><br />
+                                <span className="fw-bold">place</span>
+                            </h2>
+                            <div className="bg-secondary mb-4 opacity-50" style={{ width: '250px', height: '3px' }}></div>
 
-                            <h4 className="fw-normal text-secondary mb-3 opacity-75" style={{ fontSize: '1.5rem' }}>E-Waste Awareness Drive</h4>
-                            <p className="text-secondary lh-lg mb-0" style={{ fontSize: '0.95rem', textAlign: 'justify' }}>The Zero Waste Day E-Waste Drive at Prestige Lakeside Habitat, jointly led by Flipkart Reset and Blue Planet, enabled residents to responsibly dispose of their unused electronics while raising awareness about sustainable recycling. The initiative received an encouraging response and reinforced the importance of community participation in reducing e-waste.</p>
+                            <h4 className="fw-bold text-secondary mb-3" style={{ textAlign: 'left' }}>E-Waste Awareness Drive</h4>
+
+                            <p className="text-muted lh-base" style={{ textAlign: 'left' }}>
+                                The Zero Waste Day E-Waste Drive at Prestige Lakeside Habitat, jointly led by Flipkart Reset and Blue Planet, enabled residents to responsibly dispose of their unused electronics while raising awareness about sustainable recycling. The initiative received an encouraging response and reinforced the importance of community participation in reducing e-waste
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -317,16 +331,16 @@ const Home = () => {
                 <div className="container">
                     <div className="row align-items-center justify-content-between">
                         <div className="col-lg-4 mb-4 mb-lg-0">
-                            <h2 className="display-5 fw-bold text-dark">Discover the<br />eSmart way</h2>
+                            <h2 className="display-4 text-dark" style={{ fontWeight: '600', color: '#000' }}>Discover the<br />eSmart way</h2>
                         </div>
                         <div className="col-lg-7">
                             <div className="d-flex align-items-center gap-4">
-                                <i className="bi bi-chevron-left fs-1 fw-bold cursor-pointer hover-opacity"></i>
+                                <i className="bi bi-chevron-left fw-bold cursor-pointer hover-opacity text-dark" style={{ fontSize: '3rem', WebkitTextStroke: '2px black' }}></i>
                                 <div className="testimonial-content text-center">
                                     <p className="fs-5 text-dark lh-base mb-4">"Blue Planet’s solutions have been an integral part of our sustainability strategy. Their transparency and commitment to ethical recycling ensure that we stay compliant with global e-waste regulations."</p>
                                     <h6 className="fw-bold text-dark mb-0">— Client Name, Position, Company</h6>
                                 </div>
-                                <i className="bi bi-chevron-right fs-1 fw-bold cursor-pointer hover-opacity"></i>
+                                <i className="bi bi-chevron-right fw-bold cursor-pointer hover-opacity text-dark" style={{ fontSize: '3rem', WebkitTextStroke: '2px black' }}></i>
                             </div>
                         </div>
                     </div>
@@ -336,39 +350,39 @@ const Home = () => {
             {/* Glimpses */}
             <section className="section-padding">
                 <div className="container text-center">
-                    <h5 className="text-muted">Glimpses from</h5>
-                    <h2 className="fw-bold mb-2">Our Plant & Facilities</h2>
-                    <p className="text-muted mb-4">Perfect Technology For The Sustainable Processed</p>
+                    <h3 className="fw-normal text-dark mb-1">Glimpses from</h3>
+                    <h2 className="display-5 fw-bold text-dark mb-3">Our Plant & Facilities</h2>
+                    <p className="text-secondary fs-4 fw-light mb-5">Perfect Technology For The Sustainable Processes</p>
 
                     <div className="row g-4 row-cols-1 row-cols-md-3">
                         <div className="col">
-                            <div className="overflow-hidden rounded-5">
-                                <img src={plant1} className="img-fluid w-100" style={{ height: '350px', objectFit: 'cover' }} alt="" />
+                            <div className="overflow-hidden rounded-4">
+                                <img src={plant1} className="img-fluid w-100" style={{ height: '300px', objectFit: 'cover' }} alt="" />
                             </div>
                         </div>
                         <div className="col">
-                            <div className="overflow-hidden rounded-5">
-                                <img src={plant2} className="img-fluid w-100" style={{ height: '350px', objectFit: 'cover' }} alt="" />
+                            <div className="overflow-hidden rounded-4">
+                                <img src={plant2} className="img-fluid w-100" style={{ height: '300px', objectFit: 'cover' }} alt="" />
                             </div>
                         </div>
                         <div className="col">
-                            <div className="overflow-hidden rounded-5">
-                                <img src={plant3} className="img-fluid w-100" style={{ height: '350px', objectFit: 'cover' }} alt="" />
+                            <div className="overflow-hidden rounded-4">
+                                <img src={plant3} className="img-fluid w-100" style={{ height: '300px', objectFit: 'cover' }} alt="" />
                             </div>
                         </div>
                         <div className="col">
-                            <div className="overflow-hidden rounded-5">
-                                <img src={plant4} className="img-fluid w-100" style={{ height: '350px', objectFit: 'cover' }} alt="" />
+                            <div className="overflow-hidden rounded-4">
+                                <img src={plant4} className="img-fluid w-100" style={{ height: '300px', objectFit: 'cover' }} alt="" />
                             </div>
                         </div>
                         <div className="col">
-                            <div className="overflow-hidden rounded-5">
-                                <img src={plant5} className="img-fluid w-100" style={{ height: '350px', objectFit: 'cover' }} alt="" />
+                            <div className="overflow-hidden rounded-4">
+                                <img src={plant5} className="img-fluid w-100" style={{ height: '300px', objectFit: 'cover' }} alt="" />
                             </div>
                         </div>
                         <div className="col">
-                            <div className="overflow-hidden rounded-5">
-                                <img src={plant6} className="img-fluid w-100" style={{ height: '350px', objectFit: 'cover' }} alt="" />
+                            <div className="overflow-hidden rounded-4">
+                                <img src={plant6} className="img-fluid w-100" style={{ height: '300px', objectFit: 'cover' }} alt="" />
                             </div>
                         </div>
                     </div>
@@ -378,14 +392,18 @@ const Home = () => {
             {/* Business Relations */}
             <section className="section-padding text-center">
                 <div className="container">
-                    <h3 className="fw-bold mb-2">Business relations</h3>
-                    <p className="text-muted mb-4">Trusted by the industry's best</p>
-                    <div className="d-flex justify-content-center align-items-center flex-wrap gap-5 opacity-75">
-                        <img src={client1} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Client 1" />
-                        <img src={client2} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Client 2" />
-                        <img src={client3} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Client 3" />
-                        <img src={client4} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Client 4" />
-                        <img src={client5} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Client 5" />
+                    <h2 className="display-5 fw-bold mb-3 text-dark">Business relations</h2>
+                    <p className="text-secondary fs-4 fw-light mb-3">Trusted by the Industry’s best</p>
+                    <div className="d-flex justify-content-center align-items-center gap-4">
+                        <i className="bi bi-chevron-left fw-bolder cursor-pointer hover-opacity" style={{ fontSize: '3rem', color: '#5c9c44', textShadow: '0px 0px 3px #5c9c44' }}></i>
+                        <div className="d-flex justify-content-center align-items-center gap-5">
+                            <img src={client5} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Landbell" />
+                            <img src={client3} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Havells" />
+                            <img src={client1} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Croma" />
+                            <img src={client2} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Maruti Suzuki" />
+                            <img src={client4} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Reliance Digital" />
+                        </div>
+                        <i className="bi bi-chevron-right fw-bolder cursor-pointer hover-opacity" style={{ fontSize: '3rem', color: '#5c9c44', textShadow: '0px 0px 3px #5c9c44' }}></i>
                     </div>
                 </div>
             </section>
@@ -395,40 +413,79 @@ const Home = () => {
                 <div className="container">
                     <div className="row g-4 text-center">
                         <div className="col-md-4">
-                            <h4 className="fw-bold mb-4">Press Release</h4>
-                            <iframe
-                                className="w-100 rounded-4"
-                                height="300"
-                                src="https://www.youtube.com/embed/1YZK6Gzq5d0?si=uzNyohL5rad-VlK9"
-                                title="Press Release"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                            ></iframe>
+                            <h3 className="fw-bold mb-4 text-dark">Press Release</h3>
+                            <div className="rounded-5 overflow-hidden position-relative shadow" style={{ height: '350px' }}>
+                                {activeVideo === 'press' ? (
+                                    <iframe
+                                        className="w-100 h-100"
+                                        src="https://www.youtube.com/embed/1YZK6Gzq5d0?autoplay=1"
+                                        title="Press Release"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                    ></iframe>
+                                ) : (
+                                    <div className="w-100 h-100 position-relative cursor-pointer" onClick={() => setActiveVideo('press')}>
+                                        <img src={mediaPress} className="w-100 h-100 object-fit-cover" alt="Press Release" />
+                                        <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
+                                        <div className="position-absolute top-50 start-50 translate-middle">
+                                            <div className="bg-white rounded-circle d-flex justify-content-center align-items-center" style={{ width: '80px', height: '80px' }}>
+                                                <i className="bi bi-play-fill" style={{ fontSize: '3rem', color: '#fd7e14' }}></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
                         </div>
                         <div className="col-md-4">
-                            <h4 className="fw-bold mb-4">Featured By</h4>
-                            <iframe
-                                className="w-100 rounded-4"
-                                height="300"
-                                src="https://www.youtube.com/embed/VlTa6uFP9cM?si=147r5w5_Cb8BGJNO"
-                                title="Featured By"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                            ></iframe>
+                            <h3 className="fw-bold mb-4 text-dark">Featured By</h3>
+                            <div className="rounded-5 overflow-hidden position-relative shadow" style={{ height: '350px' }}>
+                                {activeVideo === 'featured' ? (
+                                    <iframe
+                                        className="w-100 h-100"
+                                        src="https://www.youtube.com/embed/VlTa6uFP9cM?autoplay=1"
+                                        title="Featured By"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                    ></iframe>
+                                ) : (
+                                    <div className="w-100 h-100 position-relative cursor-pointer" onClick={() => setActiveVideo('featured')}>
+                                        <img src={mediaFeatured} className="w-100 h-100 object-fit-cover" alt="Featured By" />
+                                        <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
+                                        <div className="position-absolute top-50 start-50 translate-middle">
+                                            <div className="bg-white rounded-circle d-flex justify-content-center align-items-center" style={{ width: '80px', height: '80px' }}>
+                                                <i className="bi bi-play-fill" style={{ fontSize: '3rem', color: '#fd7e14' }}></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
                         </div>
                         <div className="col-md-4">
-                            <h4 className="fw-bold mb-4">Podcast</h4>
-                            <iframe
-                                className="w-100 rounded-4"
-                                height="300"
-                                src="https://www.youtube.com/embed/-NkZJn5PZyo?si=JGGS70KSY29DrocF"
-                                title="Podcast"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                            ></iframe>
+                            <h3 className="fw-bold mb-4 text-dark">Podcast</h3>
+                            <div className="rounded-5 overflow-hidden position-relative shadow" style={{ height: '350px' }}>
+                                {activeVideo === 'podcast' ? (
+                                    <iframe
+                                        className="w-100 h-100"
+                                        src="https://www.youtube.com/embed/-NkZJn5PZyo?autoplay=1"
+                                        title="Podcast"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                    ></iframe>
+                                ) : (
+                                    <div className="w-100 h-100 position-relative cursor-pointer" onClick={() => setActiveVideo('podcast')}>
+                                        <img src={mediaPodcast} className="w-100 h-100 object-fit-cover" alt="Podcast" />
+                                        <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
+                                        <div className="position-absolute top-50 start-50 translate-middle">
+                                            <div className="bg-white rounded-circle d-flex justify-content-center align-items-center" style={{ width: '80px', height: '80px' }}>
+                                                <i className="bi bi-play-fill" style={{ fontSize: '3rem', color: '#fd7e14' }}></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -437,12 +494,12 @@ const Home = () => {
             {/* Footer */}
             <footer className="footer-wrapper p-4">
                 <div className="container-fluid bg-success text-white rounded-5 p-5 position-relative overflow-hidden footer-container">
-                    <div className="row g-5">
+                    <div className="row g-5 text-start">
                         {/* Left Column */}
                         <div className="col-lg-4 pe-lg-5 border-end border-white border-opacity-25">
-                            <img src={placeHolder} height="60" alt="BluePlanet" className="mb-4" />
-                            <h3 className="fw-bold mb-4">Turning Waste to<br />Treasure</h3>
-                            <p className="small text-white opacity-75 mb-5 lh-lg" style={{ textAlign: 'justify' }}>Blue Planet E-Waste Solutions is a leading integrated technology-driven platform for responsible e-waste recycling, refurbishment, and resource recovery. We transform discarded electronics into valuable materials through ethical, compliant, and circular economy practices.</p>
+                            <img src={placeHolder} style={{ width: '220px', height: 'auto' }} alt="BluePlanet" className="mb-4" />
+                            <h2 className="fw-bold mb-3">Turning Waste to<br />Treasure</h2>
+                            <p className="text-white opacity-75 mb-5 lh-base" style={{ fontSize: '0.95rem' }}>Blue Planet E-Waste Solutions is a leading integrated technology-driven platform for responsible e-waste recycling, refurbishment, and resource recovery. We transform discarded electronics into valuable materials through ethical, compliant, and circular economy practices.</p>
                             <div className="d-flex gap-3">
                                 <Link to="#" className="social-icon-circle"><i className="bi bi-linkedin"></i></Link>
                                 <Link to="#" className="social-icon-circle"><i className="bi bi-facebook"></i></Link>
@@ -451,32 +508,32 @@ const Home = () => {
                         </div>
 
                         {/* Middle Content */}
-                        <div className="col-lg-5 d-flex flex-column">
-                            <div className="row mb-4">
+                        <div className="col-lg-5 d-flex flex-column ps-lg-5">
+                            <div className="row mb-5">
                                 <div className="col-sm-6">
-                                    <h5 className="fw-bold mb-4">About</h5>
-                                    <ul className="list-unstyled footer-links d-flex flex-column gap-2">
-                                        <li><Link to="/about" className="text-white text-decoration-none d-flex align-items-center"><i className="bi bi-arrow-right-short me-2"></i>About</Link></li>
-                                        <li><Link to="/who-we-are" className="text-white text-decoration-none d-flex align-items-center"><i className="bi bi-arrow-right-short me-2"></i>Who we are</Link></li>
-                                        <li><Link to="/what-we-do" className="text-white text-decoration-none d-flex align-items-center"><i className="bi bi-arrow-right-short me-2"></i>What we do</Link></li>
-                                        <li><Link to="/impact" className="text-white text-decoration-none d-flex align-items-center"><i className="bi bi-arrow-right-short me-2"></i>Impact</Link></li>
-                                        <li><Link to="/contact-us" className="text-white text-decoration-none d-flex align-items-center"><i className="bi bi-arrow-right-short me-2"></i>Contact us</Link></li>
+                                    <h4 className="fw-bold mb-4">About</h4>
+                                    <ul className="list-unstyled footer-links d-flex flex-column gap-1">
+                                        <li><Link to="/about" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>About</Link></li>
+                                        <li><Link to="/who-we-are" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>Who we are</Link></li>
+                                        <li><Link to="/what-we-do" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>What we do</Link></li>
+                                        <li><Link to="/impact" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>Impact</Link></li>
+                                        <li><Link to="/contact-us" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>Contact us</Link></li>
                                     </ul>
                                 </div>
                                 <div className="col-sm-6">
-                                    <h5 className="fw-bold mb-4">Services</h5>
-                                    <ul className="list-unstyled footer-links d-flex flex-column gap-2">
-                                        <li><Link to="/e-waste-recycling" className="text-white text-decoration-none d-flex align-items-center"><i className="bi bi-arrow-right-short me-2"></i>E-Waste Recyling</Link></li>
-                                        <li><Link to="/refurbishment" className="text-white text-decoration-none d-flex align-items-center"><i className="bi bi-arrow-right-short me-2"></i>Refurbishment</Link></li>
-                                        <li><Link to="/precious-metals" className="text-white text-decoration-none d-flex align-items-center"><i className="bi bi-arrow-right-short me-2"></i>Precious metals</Link></li>
+                                    <h4 className="fw-bold mb-4">Services</h4>
+                                    <ul className="list-unstyled footer-links d-flex flex-column gap-1">
+                                        <li><Link to="/e-waste-recycling" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>E-Waste Recycling</Link></li>
+                                        <li><Link to="/refurbishment" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>Refurbishment</Link></li>
+                                        <li><Link to="/precious-metals" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>Precious Metals Recovery</Link></li>
                                     </ul>
                                 </div>
                             </div>
 
-                            <div className="newsletter-box mt-auto pt-3">
-                                <h4 className="fw-light mb-4">Newsletters</h4>
+                            <div className="newsletter-box mt-auto">
+                                <h3 className="fw-normal mb-4">Newsletters</h3>
                                 <div className="position-relative w-100">
-                                    <i className="bi bi-envelope position-absolute top-50 translate-middle-y ms-4 fs-5" style={{ zIndex: 5, color: '#2e5a27' }}></i>
+                                    <i className="bi bi-envelope position-absolute top-50 translate-middle-y ms-4 fs-5 text-dark" style={{ zIndex: 5, color: '#2e5a27' }}></i>
                                     <input type="email" className="form-control rounded-pill border-0 py-3 ps-5 pe-5 custom-newsletter-input" placeholder="Email Address" style={{ paddingLeft: '3.5rem !important' }} />
                                     <button className="btn rounded-pill position-absolute end-0 top-50 translate-middle-y me-2 px-4 py-2 fw-bold text-white shadow-none" style={{ backgroundColor: '#000', fontSize: '0.9rem' }}>Submit</button>
                                 </div>
@@ -484,12 +541,12 @@ const Home = () => {
                         </div>
 
                         {/* Right Column */}
-                        <div className="col-lg-3">
-                            <h6 className="fw-bold mb-3 opacity-75">Corporate Office</h6>
-                            <p className="small text-white opacity-75 mb-4">202, 2nd floor, SAS Tower<br />Sector 38, Gurugram,<br />Haryana 122001</p>
+                        <div className="col-lg-3 ps-lg-4">
+                            <h6 className="fw-bold mb-3 text-white">Corporate Office</h6>
+                            <p className="text-white opacity-75 mb-4 lh-base" style={{ fontSize: '0.9rem' }}>202, 2nd floor, SAS Tower<br />Sector 38, Gurugram,<br />Haryana 122001</p>
 
-                            <h6 className="fw-bold mb-3 opacity-75">Recycling Facility @ Binola</h6>
-                            <p className="small text-white opacity-75 mb-4">Khewat No. 654/617 Min,<br />Khata No. 781, Rect No. 125,<br />Kill Binola Industrial Area<br />Main road, Binola Industrial<br />Area, Gurugram - 122413,<br />Haryana, India</p>
+                            <h6 className="fw-bold mb-3 text-white">Recycling Facility @ Binola</h6>
+                            <p className="text-white opacity-75 mb-4 lh-base" style={{ fontSize: '0.9rem' }}>Khewat No. 654/617 Min,<br />Khata No. 781, Rect No. 125,<br />Kill Binola Industrial Area<br />Main road, Binola Industrial<br />Area, Gurugram - 122413,<br />Haryana, India</p>
 
                             <h5 className="fw-bold mb-2">Call Us</h5>
                             <div className="d-flex align-items-center gap-2">
@@ -499,8 +556,8 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="text-center small text-white opacity-75 mt-5">
-                        <p className="mb-0">© Copyright 2025 by Blue Planet Environmental Solutions Pte. Ltd.</p>
+                    <div className="text-center small text-white opacity-75 mt-5 pt-4">
+                        <p className="mb-0">© Copyright 2025 by Blue Planet Environmental Soultion Pte. Ltd.</p>
                     </div>
                 </div>
             </footer>
