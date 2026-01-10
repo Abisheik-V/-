@@ -301,7 +301,7 @@ const Home = () => {
                                     <div className="overflow-hidden rounded-4 shadow-sm" style={{ height: '300px' }}>
                                         <img src={drive3} className="img-fluid w-100 h-100 object-fit-cover" alt="Award Handover" />
                                     </div>
-                                    <div className="bg-success rounded-4 p-4 d-flex flex-column justify-content-center align-items-center text-center text-white shadow-sm" style={{ height: '220px', backgroundColor: 'rgba(109, 230, 66, 1)' }}>
+                                    <div className="rounded-4 p-4 d-flex flex-column justify-content-center align-items-center text-center text-white shadow-sm" style={{ height: '220px', backgroundColor: '#5c9c44' }}>
                                         <h2 className="fw-bold display-4 mb-2">10000k</h2>
                                         <p className="small lh-sm mb-0">Kids and families now have access to technology because of our joint efforts</p>
                                     </div>
