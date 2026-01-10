@@ -98,7 +98,7 @@ const Home = () => {
                     <div className="row w-100 position-relative z-2 ps-lg-4 align-items-center">
                         <div className="col-lg-7">
                             <h1 className="fw-bold mb-4 lh-sm text-start" style={{ fontSize: '3rem', marginTop: '-190px', marginLeft: '100px' }}>Leading the Charge<br />in Sustainable<br />E-Waste Solutions</h1>
-                            <button className="btn btn-light rounded-4 px-5 py-3 text-dark mt-4 hero-demo-btn" style={{ fontSize: '1.25rem', marginLeft: '200px' }}>Request a Demo</button>
+                            <button className="btn btn-light rounded-4 px-5 py-3 text-dark mt-4 hero-demo-btn" style={{ fontSize: '1.25rem', marginLeft: '-160px' }}>Request a Demo</button>
                         </div>
 
                         {/* Visual marker "Hidden Materials" */}
