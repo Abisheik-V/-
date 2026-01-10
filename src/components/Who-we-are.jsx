@@ -48,6 +48,8 @@ import green3 from '../assets/images/green3.png';
 import green4 from '../assets/images/green4.png';
 import benefitBg from '../assets/images/benefit_bg.png';
 import page2_bg from '../assets/images/page2_bg.png';
+import navSearch from '../assets/images/nav_search.png';
+import navMenu from '../assets/images/nav_menu.png';
 
 const WhatWeDo = () => {
     useEffect(() => {
@@ -61,34 +63,36 @@ const WhatWeDo = () => {
     return (
         <div className="what-we-do-container">
             {/* Navbar */}
-            <nav className="navbar navbar-expand-lg navbar-light bg-white py-4 position-relative">
+            <nav className="navbar navbar-expand-lg navbar-light bg-white py-2 position-relative">
                 <div className="container">
                     <Link className="navbar-brand" to="/">
-                        <img src={placeHolder} alt="BluePlanet" height="60" />
+                        <img src={placeHolder} alt="BluePlanet" />
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav ms-auto align-items-center gap-4 fw-bolder">
-                            <li className="nav-item"><Link className="nav-link text-dark" to="/">Home</Link></li>
-                            <li className="nav-item"><Link className="nav-link text-dark" to="/who-we-are">Who we are</Link></li>
+                        <ul className="navbar-nav ms-auto align-items-center gap-4">
+                            <li className="nav-item"><Link className="nav-link text-dark fw-bold-50" to="/">Home</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-dark fw-bold-50" to="/who-we-are">Who We Are</Link></li>
                             <li className="nav-item position-relative">
-                                <Link className="nav-link text-dark" to="/what-we-do">Services</Link>
-                                <div className="services-dropdown d-flex flex-column align-items-center position-absolute start-50 translate-middle-x">
-                                    <div className="dropdown-line"></div>
-                                    <div className="bg-white border text-center p-2 rounded-1 shadow-sm lh-sm text-muted dropdown-content">
-                                        <span className="fw-bold text-dark">What We Do,</span> E-Waste Recycling,<br />Refurbishment, precious metal Recovery
-                                    </div>
+                                <Link className="nav-link text-dark fw-bold-50" to="/what-we-do">Services</Link>
+                                <div className="services-dropdown position-absolute start-50 translate-middle-x">
+                                    <ul className="dropdown-menu-custom">
+                                        <li><Link className="dropdown-item-custom" to="/what-we-do">What We Do</Link></li>
+                                        <li><Link className="dropdown-item-custom" to="/e-waste-recycling">E-Waste Recycling</Link></li>
+                                        <li><Link className="dropdown-item-custom" to="/refurbishment">Refurbishment</Link></li>
+                                        <li><Link className="dropdown-item-custom" to="/precious-metals">Precious Metal Recovery</Link></li>
+                                    </ul>
                                 </div>
                             </li>
-                            <li className="nav-item"><Link className="nav-link text-dark" to="/#sustainability">Sustainability</Link></li>
-                            <li className="nav-item"><Link className="nav-link text-dark" to="/#features">Feature</Link></li>
-                            <li className="nav-item"><Link className="nav-link text-dark" to="/#contact">Contact</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-dark fw-bold-50" to="/#sustainability">Sustainability</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-dark fw-bold-50" to="/#features">Feature</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-dark fw-bold-50" to="/#contact">Contact</Link></li>
                         </ul>
                         <div className="d-flex align-items-center gap-3 ms-lg-5">
-                            <i className="bi bi-search fs-4 cursor-pointer"></i>
-                            <i className="bi bi-list fs-2 cursor-pointer fw-bold"></i>
+                            <img src={navSearch} alt="Search" className="cursor-pointer" style={{ height: '30px', width: 'auto' }} />
+                            <img src={navMenu} alt="Menu" className="cursor-pointer" style={{ height: '30px', width: 'auto' }} />
                         </div>
                     </div>
                 </div>
@@ -111,27 +115,28 @@ const WhatWeDo = () => {
             {/* Intro Quote Section */}
             <section className="bg-white section-padding">
                 <div className="container">
-                    <div className="d-flex justify-content-center align-items-center mb-3 gap-4">
+                    <div className="d-flex justify-content-center align-items-center mb-5 gap-5">
                         <div className="me-2">
-                            <img src={recycleIcon} alt="Recycle" style={{ height: '120px', width: 'auto' }} />
+                            <img src={recycleIcon} alt="Recycle" style={{ height: '180px', width: 'auto' }} />
                         </div>
                         <div>
-                            <h2 className="fw-bold mb-0 display-6 lh-sm text-dark">
-                                Reimagining <span className="text-success">Waste</span>. Restoring <span className="text-success">Value</span>.<br />
-                                Regenerating the <span className="text-success">Planet</span>.
-                            </h2>
+                            <div className="text-start">
+                                <h3 className="fw-bold mb-0 text-dark" style={{ fontSize: '2.5rem', lineHeight: '1.1' }}>
+                                    Reimagining <span style={{ color: 'hsla(104, 93%, 47%, 1.00)' }}>Waste</span>. Restoring <span style={{ color: 'hsla(104, 93%, 47%, 1.00)' }}>Value</span>.
+                                </h3>
+                                <h1 className="fw-bold mb-0 text-dark mt-1" style={{ fontSize: '4rem', lineHeight: '1.1' }}>
+                                    Regenerating the <span style={{ color: 'hsla(104, 93%, 47%, 1.00)' }}>Planet</span>.
+                                </h1>
+                                <div className="mt-4" style={{ width: '80%', height: '2px', backgroundColor: '#e0e0e0' }}></div>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="d-flex justify-content-center mb-3 mb-lg-4">
-                        <div style={{ width: '400px', height: '1px', backgroundColor: '#e0e0e0' }}></div>
-                    </div>
-
-                    <div className="row justify-content-center position-relative">
-                        <div className="col-lg-8 text-center position-relative">
-                            <p className="text-muted mb-0" style={{ lineHeight: '1.8', fontSize: '1.05rem' }}>Electronic waste is one of the fastest-growing waste streams in the world — and one of the most dangerous when mishandled. Toxic materials, lost resources, and informal recycling practices threaten environmental health, public safety, and future resource security.</p>
-                            <div className="position-absolute end-0 bottom-0 translate-middle-y d-none d-lg-block" style={{ right: '-60px' }}>
-                                <img src={introSprout} alt="" style={{ width: '80px', height: 'auto', marginBottom: '-20px' }} />
+                    <div className="row justify-content-center position-relative mt-5">
+                        <div className="col-lg-10 text-center position-relative">
+                            <p className="text-secondary mb-0" style={{ lineHeight: '1.6', fontSize: '1.3rem', textAlign: 'center' }}>Electronic waste is one of the fastest-growing waste streams in the world — and one of the most dangerous when mishandled. Toxic materials, lost resources, and informal recycling practices threaten environmental health, public safety, and future resource security.</p>
+                            <div className="position-absolute end-0 bottom-0 translate-middle-y d-none d-lg-block" style={{ right: '-40px', marginBottom: '-40px' }}>
+                                <img src={introSprout} alt="" style={{ width: '100px', height: 'auto' }} />
                             </div>
                         </div>
                     </div>
