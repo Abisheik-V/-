@@ -513,7 +513,7 @@ const Home = () => {
                                 <div className="col-sm-6">
                                     <h4 className="fw-bold mb-4">About</h4>
                                     <ul className="list-unstyled footer-links d-flex flex-column gap-1">
-                                        <li><Link to="/about" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>About</Link></li>
+                                        <li><Link to="/about" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short "></i>About</Link></li>
                                         <li><Link to="/who-we-are" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>Who we are</Link></li>
                                         <li><Link to="/what-we-do" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>What we do</Link></li>
                                         <li><Link to="/impact" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>Impact</Link></li>
