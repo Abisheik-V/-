@@ -97,7 +97,7 @@ const Home = () => {
                     <div className="row w-100 position-relative z-2 ps-lg-4 align-items-center">
                         <div className="col-lg-7">
                             <h1 className="display-3 fw-bold mb-4 lh-sm text-start">Leading the Charge<br />in Sustainable<br />E-Waste Solutions</h1>
-                            <button className="btn btn-light rounded-4 px-5 py-3 text-dark mt-4 shadow" style={{ fontSize: '1.25rem', marginLeft: '-380px', marginTop: '-300px' }}>Request a Demo</button>
+                            <button className="btn btn-light rounded-4 px-5 py-3 text-dark mt-4 shadow hero-demo-btn" style={{ fontSize: '1.25rem', marginLeft: '-380px', marginTop: '-300px' }}>Request a Demo</button>
                         </div>
 
                         {/* Visual marker "Hidden Materials" */}
@@ -395,15 +395,15 @@ const Home = () => {
                     <h2 className="display-5 fw-bold mb-3 text-dark">Business relations</h2>
                     <p className="text-secondary fs-4 fw-light mb-3">Trusted by the Industry’s best</p>
                     <div className="d-flex justify-content-center align-items-center gap-4">
-                        <i className="bi bi-chevron-left fw-bolder cursor-pointer hover-opacity" style={{ fontSize: '3rem', color: '#5c9c44', textShadow: '0px 0px 3px #5c9c44' }}></i>
-                        <div className="d-flex justify-content-center align-items-center gap-5">
+                        <i className="bi bi-chevron-left fw-bolder cursor-pointer hover-opacity d-none d-md-block" style={{ fontSize: '3rem', color: '#5c9c44', textShadow: '0px 0px 3px #5c9c44' }}></i>
+                        <div className="d-flex justify-content-center align-items-center gap-5 business-logos">
                             <img src={client5} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Landbell" />
                             <img src={client3} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Havells" />
                             <img src={client1} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Croma" />
                             <img src={client2} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Maruti Suzuki" />
                             <img src={client4} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Reliance Digital" />
                         </div>
-                        <i className="bi bi-chevron-right fw-bolder cursor-pointer hover-opacity" style={{ fontSize: '3rem', color: '#5c9c44', textShadow: '0px 0px 3px #5c9c44' }}></i>
+                        <i className="bi bi-chevron-right fw-bolder cursor-pointer hover-opacity d-none d-md-block" style={{ fontSize: '3rem', color: '#5c9c44', textShadow: '0px 0px 3px #5c9c44' }}></i>
                     </div>
                 </div>
             </section>

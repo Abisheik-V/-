@@ -434,9 +434,24 @@ body {
 @media (max-width: 991px) {
 
     /* Reduce Hero Title Size */
-    .hero-wrapper h1.display-1 {
-        font-size: 2.5rem;
+    .hero-wrapper h1 {
+        font-size: 2.2rem;
         /* Further reduced for better fit */
+    }
+
+    /* Reset Hero Button for Mobile */
+    .hero-demo-btn {
+        margin-left: 0 !important;
+        margin-top: 20px !important;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Business Relations Mobile Fix */
+    .business-logos {
+        flex-wrap: wrap !important;
+        gap: 20px !important;
+        justify-content: center !important;
     }
 
     /* Reset vertical height constraint on mobile to allow natural flow */
