@@ -398,20 +398,20 @@ const WhatWeDo = () => {
                 <div className="container-fluid bg-success text-white rounded-5 p-5 position-relative overflow-hidden footer-container">
                     <div className="row g-5">
                         {/* Left Column */}
-                        <div className="col-lg-4 pe-lg-5 border-end border-white border-opacity-25">
+                        <div className="col-lg-4 pe-lg-5 border-end border-white border-opacity-25 text-start">
                             <img src={placeHolder} style={{ width: '220px', height: 'auto' }} alt="BluePlanet" className="mb-4" />
                             <h2 className="fw-bold mb-3">Turning Waste to<br />Treasure</h2>
-                            <p className="text-white opacity-75 mb-5 lh-base" style={{ fontSize: '0.95rem',textAlign:'left' }}>Blue Planet E-Waste Solutions is a leading integrated technology-driven platform for responsible e-waste recycling, refurbishment, and resource recovery. We transform discarded electronics into valuable materials through ethical, compliant, and circular economy practices.</p>
+                            <p className="text-white opacity-75 mb-5 lh-base" style={{ fontSize: '0.95rem' }}>Blue Planet E-Waste Solutions is a leading integrated technology-driven platform for responsible e-waste recycling, refurbishment, and resource recovery. We transform discarded electronics into valuable materials through ethical, compliant, and circular economy practices.</p>
                             <div className="d-flex gap-3 pt-0">
                                 <img src={footerSocials} alt="Social Media" style={{ height: '30px', width: 'auto' }} />
                             </div>
                         </div>
 
                         {/* Middle Content */}
-                        <div className="col-lg-5 d-flex flex-column ps-lg-5">
+                        <div className="col-lg-5 d-flex flex-column ps-lg-5 text-start">
                             <div className="row mb-5">
                                 <div className="col-sm-6">
-                                    <h4 className="fw-bold mb-4" style={{textAlign:'left'}}>About</h4>
+                                    <h4 className="fw-bold mb-4">About</h4>
                                     <ul className="list-unstyled footer-links d-flex flex-column gap-1">
                                         <li><Link to="/about" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short "></i>About</Link></li>
                                         <li><Link to="/who-we-are" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>Who we are</Link></li>
@@ -421,7 +421,7 @@ const WhatWeDo = () => {
                                     </ul>
                                 </div>
                                 <div className="col-sm-6">
-                                    <h4 className="fw-bold mb-4" style={{textAlign:'left'}}>Services</h4>
+                                    <h4 className="fw-bold mb-4">Services</h4>
                                     <ul className="list-unstyled footer-links d-flex flex-column gap-1">
                                         <li><Link to="/e-waste-recycling" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>E-Waste Recycling</Link></li>
                                         <li><Link to="/refurbishment" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>Refurbishment</Link></li>
@@ -431,7 +431,7 @@ const WhatWeDo = () => {
                             </div>
 
                             <div className="newsletter-box mt-auto">
-                                <h3 className="fw-normal mb-4" style={{textAlign:'left'}}>Newsletters</h3>
+                                <h3 className="fw-normal mb-4">Newsletters</h3>
                                 <div className="position-relative w-100">
                                     <i className="bi bi-envelope position-absolute top-50 translate-middle-y ms-4 fs-5 text-dark" style={{ zIndex: 5, color: '#2e5a27' }}></i>
                                     <input type="email" className="form-control rounded-pill border-0 py-3 ps-5 pe-5 custom-newsletter-input" placeholder="Email Address" style={{ paddingLeft: '3.5rem !important' }} />
@@ -441,17 +441,17 @@ const WhatWeDo = () => {
                         </div>
 
                         {/* Right Column */}
-                        <div className="col-lg-3 ps-lg-4">
-                            <h6 className="fw-bold mb-3 text-white" style={{textAlign:'left'}}>Corporate Office</h6>
-                            <p className="text-white opacity-75 mb-4 lh-base" style={{ fontSize: '0.9rem' ,textAlign:'left'}}>202, 2nd floor, SAS Tower<br />Sector 38, Gurugram,<br />Haryana 122001</p>
+                        <div className="col-lg-3 ps-lg-4 text-start">
+                            <h6 className="fw-bold mb-3 text-white">Corporate Office</h6>
+                            <p className="text-white opacity-75 mb-4 lh-base" style={{ fontSize: '0.9rem' }}>202, 2nd floor, SAS Tower<br />Sector 38, Gurugram,<br />Haryana 122001</p>
 
-                            <h6 className="fw-bold mb-3 text-white" style={{textAlign:'left'}}>Recycling Facility @ Binola</h6>
-                            <p className="text-white opacity-75 mb-4 lh-base" style={{ fontSize: '0.9rem' ,textAlign:'left'}}>Khewat No. 654/617 Min,<br />Khata No. 781, Rect No. 125,<br />Kill Binola Industrial Area<br />Main road, Binola Industrial<br />Area, Gurugram - 122413,<br />Haryana, India</p>
+                            <h6 className="fw-bold mb-3 text-white">Recycling Facility @ Binola</h6>
+                            <p className="text-white opacity-75 mb-4 lh-base" style={{ fontSize: '0.9rem' }}>Khewat No. 654/617 Min,<br />Khata No. 781, Rect No. 125,<br />Kill Binola Industrial Area<br />Main road, Binola Industrial<br />Area, Gurugram - 122413,<br />Haryana, India</p>
 
-                            <h5 className="fw-bold mb-2" style={{textAlign:'left'}}>Call Us</h5>
+                            <h5 className="fw-bold mb-2">Call Us</h5>
                             <div className="d-flex align-items-center gap-2">
                                 <i className="bi bi-telephone-fill"></i>
-                                <span className="fw-bold fs-5" style={{textAlign:'left'}}>18003090950</span>
+                                <span className="fw-bold fs-5">18003090950</span>
                             </div>
                         </div>
                     </div>
