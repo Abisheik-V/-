@@ -7,12 +7,17 @@ import 'aos/dist/aos.css';
 import '../assets/style/style.css';
 
 import placeHolder from '../assets/images/logo_placeholder.png';
+import whatWeDoHero from '../assets/images/what_we_do_hero_v2.png';
 import page2_bg from '../assets/images/page2_bg.png';
 import heroBg from '../assets/images/hero_bg.png'; // Using as fallback hero image
 import introSprout from '../assets/images/intro_sprout.png'; // Using for hero illustration
 import recycleItAssets from '../assets/images/recycle_it_assets.png';
 import recycleHomeAppliances from '../assets/images/recycle_home_appliances.png';
 import recycleIndustrial from '../assets/images/recycle_industrial.png';
+import img1 from '../assets/images/img1.png';
+import img2 from '../assets/images/img2.png';
+import img3 from '../assets/images/img3.png';
+import img4 from '../assets/images/img4.png';
 import service1 from '../assets/images/service_1.png'; // Extra service image
 import blue1 from '../assets/images/blue1.png';
 import blue2 from '../assets/images/blue2.png';
@@ -90,7 +95,7 @@ const WhatWeDo = () => {
             <header className="py-2">
                 <div className="container">
                     <div className="overflow-hidden position-relative" style={{ minHeight: '650px', borderRadius: '40px' }}>
-                        <div className="position-absolute top-0 start-0 w-100 h-100" style={{ backgroundImage: `url(${page2_bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+                        <div className="position-absolute top-0 start-0 w-100 h-100" style={{ backgroundImage: `url(${whatWeDoHero})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
                     </div>
                 </div>
             </header>
@@ -135,7 +140,7 @@ const WhatWeDo = () => {
                             <div className="col-lg-5 col-md-6 mb-4 mb-md-0 position-relative">
                                 <div className="position-absolute w-100 h-100 rounded-5" style={{ top: '15px', left: '15px', backgroundColor: 'rgba(255, 255, 255, 0.15)', zIndex: 0 }}></div>
                                 <div className="rounded-5 overflow-hidden position-relative shadow-lg" style={{ height: '320px', zIndex: 1 }}>
-                                    <img src={recycleIndustrial} className="w-100 h-100 object-fit-cover" alt="Recycling" />
+                                    <img src={img1} className="w-100 h-100 object-fit-cover" alt="Recycling" />
                                 </div>
                             </div>
                             <div className="col-lg-6 col-md-6 text-white text-start ps-lg-5">
@@ -160,7 +165,7 @@ const WhatWeDo = () => {
                             <div className="col-lg-5 col-md-6 mb-4 mb-md-0 position-relative">
                                 <div className="position-absolute w-100 h-100 rounded-5" style={{ top: '15px', left: '15px', backgroundColor: 'rgba(255, 255, 255, 0.15)', zIndex: 0 }}></div>
                                 <div className="rounded-5 overflow-hidden position-relative shadow-lg" style={{ height: '320px', zIndex: 1 }}>
-                                    <img src={recycleHomeAppliances} className="w-100 h-100 object-fit-cover" alt="Home Assets" />
+                                    <img src={img2} className="w-100 h-100 object-fit-cover" alt="Home Assets" />
                                 </div>
                             </div>
                             <div className="col-lg-6 col-md-6 text-white text-start ps-lg-5">
@@ -183,7 +188,7 @@ const WhatWeDo = () => {
                             <div className="col-lg-5 col-md-6 mb-4 mb-md-0 position-relative">
                                 <div className="position-absolute w-100 h-100 rounded-5" style={{ top: '15px', left: '15px', backgroundColor: 'rgba(255, 255, 255, 0.15)', zIndex: 0 }}></div>
                                 <div className="rounded-5 overflow-hidden position-relative shadow-lg" style={{ height: '320px', zIndex: 1 }}>
-                                    <img src={recycleItAssets} className="w-100 h-100 object-fit-cover" alt="IT Repair" />
+                                    <img src={img3} className="w-100 h-100 object-fit-cover" alt="IT Repair" />
                                 </div>
                             </div>
                             <div className="col-lg-6 col-md-6 text-white text-start ps-lg-5">
@@ -206,7 +211,7 @@ const WhatWeDo = () => {
                             <div className="col-lg-5 col-md-6 mb-4 mb-md-0 position-relative">
                                 <div className="position-absolute w-100 h-100 rounded-5" style={{ top: '15px', left: '15px', backgroundColor: 'rgba(255, 255, 255, 0.15)', zIndex: 0 }}></div>
                                 <div className="rounded-5 overflow-hidden position-relative shadow-lg" style={{ height: '320px', zIndex: 1 }}>
-                                    <img src={service1} className="w-100 h-100 object-fit-cover" alt="Consumer Appliance" />
+                                    <img src={img4} className="w-100 h-100 object-fit-cover" alt="Consumer Appliance" />
                                 </div>
                             </div>
                             <div className="col-lg-6 col-md-6 text-white text-start ps-lg-5">
