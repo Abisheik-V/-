@@ -318,9 +318,9 @@ const Home = () => {
                             </h2>
                             <div className="bg-secondary mb-4 opacity-50" style={{ width: '250px', height: '3px' }}></div>
 
-                            <h4 className="fw-bold text-secondary mb-3" style={{ textAlign: 'left' }}>E-Waste Awareness Drive</h4>
+                            <h4 className="fw-bold-50 text-secondary mb-3" style={{ textAlign: 'left' }}>E-Waste Awareness Drive</h4>
 
-                            <p className="text-muted lh-base" style={{ textAlign: 'left', fontFamily: '"Roboto Variable", "Segoe UI", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, Ubuntu, Cantarell, "Fira Sans", sans-serif',fontSize:'16px' }}>
+                            <p className="text-muted lh-base" style={{ textAlign: 'left', fontFamily: '"Roboto Variable", "Segoe UI", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, Ubuntu, Cantarell, "Fira Sans", sans-serif', fontSize: '1rem' }}>
                                 The Zero Waste Day E-Waste Drive at Prestige Lakeside Habitat, jointly led by Flipkart Reset and Blue Planet, enabled residents to responsibly dispose of their unused electronics while raising awareness about sustainable recycling. The initiative received an encouraging response and reinforced the importance of community participation in reducing e-waste
                             </p>
                         </div>
@@ -476,7 +476,7 @@ const Home = () => {
                 <div className="container">
                     <div className="row g-4 text-center">
                         <div className="col-md-4">
-                            <h2 className="fw-bold mb-4 text-dark">Press Release</h2>
+                            <h2 className="display-5 fw-semibold mb-4 text-dark">Press Release</h2>
                             <div className="rounded-5 overflow-hidden position-relative shadow" style={{ height: '350px' }}>
                                 {activeVideo === 'press' ? (
                                     <iframe
@@ -501,7 +501,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-md-4">
-                            <h2 className="fw-bold mb-4 text-dark">Featured By</h2>
+                            <h2 className="display-5 fw-semibold mb-4 text-dark">Featured By</h2>
                             <div className="rounded-5 overflow-hidden position-relative shadow" style={{ height: '350px' }}>
                                 {activeVideo === 'featured' ? (
                                     <iframe
@@ -526,7 +526,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-md-4">
-                            <h2 className="fw-bold mb-4 text-dark">Podcast</h2>
+                            <h2 className="display-5 fw-semibold mb-4 text-dark">Podcast</h2>
                             <div className="rounded-5 overflow-hidden position-relative shadow" style={{ height: '350px' }}>
                                 {activeVideo === 'podcast' ? (
                                     <iframe
