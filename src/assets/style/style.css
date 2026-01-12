@@ -442,6 +442,36 @@ body {
     }
 }
 
+/* Responsive for Small Desktop / Large Tablet (992px - 1200px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    /* Hero Title Adjustment */
+    .hero-title {
+        font-size: 2.5rem;
+        margin-left: 50px;
+        margin-top: -150px;
+    }
+
+    /* Hero Button Adjustment */
+    .hero-demo-btn {
+        margin-left: -160px;
+    }
+
+    /* Navbar Adjustment */
+    .navbar-brand img {
+        height: 70px;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    /* Container Padding */
+    .container {
+        max-width: 960px;
+    }
+}
+
 /* Home Page Hero Responsive Fix */
 @media (max-width: 991px) {
 
