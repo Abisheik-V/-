@@ -235,8 +235,8 @@ const Home = () => {
             {/* Why Choose Us */}
             <section className="section-padding pt-0">
                 <div className="container">
-                    <h2 className="mb-3 text-start fs-1 text-center">Why Choose <span className="fw-bold">Blue Planet E-Waste Solutions?</span></h2>
-                    <p className="text-start text-muted mb-5 fs-5 text-center">At Blue Planet, we are committed to leading the transition towards a sustainable future through:</p>
+                    <h2 className="mb-3 text-center" style={{ fontSize: '3rem' }}>Why Choose <span className="fw-bold">Blue Planet E-Waste Solutions?</span></h2>
+                    <p className="text-muted mb-5 text-center w-100 mx-auto" style={{ fontSize: '1.5rem' }}>At Blue Planet, we are committed to leading the transition towards a sustainable future through:</p>
 
                     <div className="row g-4 justify-content-center">
                         <div className="col-md-6">
@@ -318,10 +318,10 @@ const Home = () => {
                             </h2>
                             <div className="bg-secondary mb-4 opacity-50" style={{ width: '250px', height: '3px' }}></div>
 
-                            <h4 className="fw-bold-50 text-secondary mb-3" style={{ textAlign: 'left' }}>E-Waste Awareness Drive</h4>
+                            <h4 className="fw-bold text-secondary mb-3" style={{ textAlign: 'left' }}>E-Waste Awareness Drive</h4>
 
-                            <p className="text-muted lh-base" style={{ textAlign: 'left', fontFamily: '"Roboto Variable", "Segoe UI", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, Ubuntu, Cantarell, "Fira Sans", sans-serif', fontSize: '1rem' }}>
-                                The Zero Waste Day E-Waste Drive at Prestige Lakeside Habitat, jointly led by Flipkart Reset and Blue Planet, enabled residents to responsibly dispose of their unused electronics while raising awareness about sustainable recycling. The initiative received an encouraging response and reinforced the importance of community participation in reducing e-waste
+                            <p className="text-muted lh-base" style={{ textAlign: 'left', fontFamily: '"Roboto Variable", "Segoe UI", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, Ubuntu, Cantarell, "Fira Sans", sans-serif', fontSize: '1.15rem' }}>
+                                The Zero Waste Day E-Waste Drive at Prestige Lakeside Habitat, jointly led by Flipkart Reset and Blue Planet, enabled residents to responsibly dispose of their unused electronics while raising awareness about sustainable recycling. The initiative received an encouraging response and reinforced the importance of community participation in reducing e-waste.
                             </p>
                         </div>
                     </div>
@@ -574,19 +574,19 @@ const Home = () => {
                                 <div className="col-sm-6">
                                     <h4 className="fw-bold mb-4">About</h4>
                                     <ul className="list-unstyled footer-links d-flex flex-column gap-1">
-                                        <li><Link to="/about" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short "></i>About</Link></li>
-                                        <li><Link to="/who-we-are" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>Who we are</Link></li>
-                                        <li><Link to="/what-we-do" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>What we do</Link></li>
-                                        <li><Link to="/impact" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>Impact</Link></li>
-                                        <li><Link to="/contact-us" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>Contact us</Link></li>
+                                        <li><Link to="/about" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short fs-5 fw-bold text-white"></i>About</Link></li>
+                                        <li><Link to="/who-we-are" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short fs-5 fw-bold text-white"></i>Who we are</Link></li>
+                                        <li><Link to="/what-we-do" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short fs-5 fw-bold text-white"></i>What we do</Link></li>
+                                        <li><Link to="/impact" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short fs-5 fw-bold text-white"></i>Impact</Link></li>
+                                        <li><Link to="/contact-us" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short fs-5 fw-bold text-white"></i>Contact us</Link></li>
                                     </ul>
                                 </div>
                                 <div className="col-sm-6">
                                     <h4 className="fw-bold mb-4">Services</h4>
                                     <ul className="list-unstyled footer-links d-flex flex-column gap-1">
-                                        <li><Link to="/e-waste-recycling" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>E-Waste Recycling</Link></li>
-                                        <li><Link to="/refurbishment" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>Refurbishment</Link></li>
-                                        <li><Link to="/precious-metals" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>Precious Metals Recovery</Link></li>
+                                        <li><Link to="/e-waste-recycling" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short fs-5 fw-bold text-white"></i>E-Waste Recycling</Link></li>
+                                        <li><Link to="/refurbishment" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short fs-5 fw-bold text-white"></i>Refurbishment</Link></li>
+                                        <li><Link to="/precious-metals" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short fs-5 fw-bold text-white"></i>Precious Metals Recovery</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -604,10 +604,10 @@ const Home = () => {
                         {/* Right Column */}
                         <div className="col-lg-3 ps-lg-4">
                             <h6 className="fw-bold mb-3 text-white">Corporate Office</h6>
-                            <p className="text-white opacity-75 mb-4 lh-base" style={{ fontSize: '0.9rem' }}>202, 2nd floor, SAS Tower<br />Sector 38, Gurugram,<br />Haryana 122001</p>
+                            <p className="text-white-50 opacity-75 mb-4 lh-base" style={{ fontSize: '0.9rem' }}>202, 2nd floor, SAS Tower<br />Sector 38, Gurugram,<br />Haryana 122001</p>
 
                             <h6 className="fw-bold mb-3 text-white">Recycling Facility @ Binola</h6>
-                            <p className="text-white opacity-75 mb-4 lh-base" style={{ fontSize: '0.9rem' }}>Khewat No. 654/617 Min,<br />Khata No. 781, Rect No. 125,<br />Kill Binola Industrial Area<br />Main road, Binola Industrial<br />Area, Gurugram - 122413,<br />Haryana, India</p>
+                            <p className="text-white-50 opacity-75 mb-4 lh-base" style={{ fontSize: '0.9rem' }}>Khewat No. 654/617 Min,<br />Khata No. 781, Rect No. 125,<br />Kill Binola Industrial Area<br />Main road, Binola Industrial<br />Area, Gurugram - 122413,<br />Haryana, India</p>
 
                             <h5 className="fw-bold mb-2">Call Us</h5>
                             <div className="d-flex align-items-center gap-2">

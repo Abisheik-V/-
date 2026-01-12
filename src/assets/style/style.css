@@ -217,7 +217,7 @@ body {
 }
 
 .footer-links i {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .placeholder-white::placeholder {
@@ -447,14 +447,14 @@ body {
 
     /* Hero Title Adjustment */
     .hero-title {
-        font-size: 2.5rem;
-        margin-left: 50px;
-        margin-top: -150px;
+        font-size: 2.5rem !important;
+        margin-left: 100px !important;
+        margin-top: -150px !important;
     }
 
     /* Hero Button Adjustment */
     .hero-demo-btn {
-        margin-left: -160px;
+        margin-left: -60px !important;
     }
 
     /* Navbar Adjustment */
