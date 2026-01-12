@@ -525,18 +525,21 @@ body {
         padding: 15px 0;
     }
 }
+
 /* =========================================
    Who We Are - Responsive Media Queries
    ========================================= */
 
 /* Prevent global horizontal scroll */
-html, body {
+html,
+body {
     overflow-x: hidden;
     width: 100%;
 }
 
 /* Tablet and Mobile adjustments (max-width: 991px) */
 @media (max-width: 991px) {
+
     /* General Container adjustments */
     .container {
         max-width: 100%;
@@ -560,14 +563,15 @@ html, body {
     .d-flex.justify-content-center.align-items-center.mb-3.gap-5 h3 {
         font-size: 1.8rem !important;
     }
-    
+
     .d-flex.justify-content-center.align-items-center.mb-3.gap-5 h1 {
         font-size: 2.5rem !important;
     }
 
     /* Intro Sprout Image */
     .intro-sprout-img {
-        display: none !important; /* Hide on mobile/tablet to prevent overflow */
+        display: none !important;
+        /* Hide on mobile/tablet to prevent overflow */
     }
 
     /* What is E-Waste Section */
@@ -588,7 +592,7 @@ html, body {
         width: 100% !important;
         object-fit: contain;
     }
-    
+
     .section-padding.text-white[style*='background-color: #003366'] div[style*='min-height: 400px'] {
         min-height: auto !important;
     }
@@ -603,7 +607,8 @@ html, body {
 
     /* What We Recycle Section */
     .d-none.d-lg-block.position-absolute[style*='background-color: #dee2e6'] {
-        display: none !important; /* Hide vertical dividers */
+        display: none !important;
+        /* Hide vertical dividers */
     }
 
     /* Adjust Recycle Item Spacing */
@@ -620,11 +625,11 @@ html, body {
     .section-padding.pt-4.pb-0.text-center h3 {
         font-size: 1.8rem !important;
     }
-    
+
     .section-padding.pt-4.pb-0.text-center h2 {
         font-size: 2rem !important;
     }
-    
+
     .section-padding.pt-4.pb-0.text-center p {
         font-size: 1rem !important;
         padding: 0 10px;
@@ -638,15 +643,16 @@ html, body {
 
 /* Mobile adjustments (max-width: 576px) */
 @media (max-width: 576px) {
+
     /* Further reduce font sizes */
     .display-3 {
         font-size: 2.5rem !important;
     }
-    
+
     h1 {
         font-size: 2rem !important;
     }
-    
+
     h2 {
         font-size: 1.75rem !important;
     }
@@ -660,7 +666,7 @@ html, body {
     .navbar-brand img {
         height: 50px !important;
     }
-    
+
     /* Footer Socials */
     .footer-wrapper .d-flex.gap-3 img {
         height: 25px !important;
@@ -670,5 +676,78 @@ html, body {
     img[src*='process_diagram_full'] {
         width: 100% !important;
         height: auto !important;
+    }
+}
+
+/* Business Relations Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #5c9c44;
+    /* Match green theme */
+    border-radius: 50%;
+    padding: 10px;
+    background-size: 60%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+/* Ensure logos fit well in carousel */
+.carousel-item .d-flex {
+    min-height: 100px;
+}
+
+/* Business Relations - Infinite Marquee Slider (Restored) */
+.logo-slider {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.logo-slider .logo-slide-track {
+    animation: scroll 30s linear infinite;
+    display: flex;
+    width: calc(250px * 15);
+    /* 5 logos * 3 sets */
+}
+
+.logo-slider .logo-slide-track.fast-scroll {
+    animation-duration: 5s;
+}
+
+.logo-slider .slide {
+    height: 100px;
+    width: 250px;
+    flex: 0 0 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.logo-slider .slide img {
+    max-height: 80px;
+    max-width: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 5));
     }
 }

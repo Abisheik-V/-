@@ -108,7 +108,7 @@ const WhatWeDo = () => {
                         <div className="position-absolute top-0 start-0 w-100 h-100" style={{ backgroundImage: `url(${page2_bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
                         <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-10"></div> {/* Subtle overlay for text readability if needed */}
                         <div className="position-relative z-1 h-100 d-flex flex-column justify-content-center align-items-center text-center">
-                            <h1 className="display-3 fw-bold text-white mb-0" style={{ textShadow: '0 2px 20px rgba(0,0,0,0.5)', lineHeight: '1.2' }}>E-Waste<br />Recycling</h1>
+                            <h4 className="fw-bold text-white mb-0" style={{ fontSize: '2.5rem', textShadow: '0 2px 20px rgba(0,0,0,0.5)', lineHeight: '1.2',marginTop: '330px',marginLeft: '-75px' }}>E-Waste<br />Recycling</h4>
                         </div>
                     </div>
                 </div>

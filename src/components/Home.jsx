@@ -45,6 +45,7 @@ import footerSocials from '../assets/images/footer_socials.png';
 
 const Home = () => {
     const [activeVideo, setActiveVideo] = useState(null);
+    const [isFastScroll, setIsFastScroll] = useState(false);
 
     useEffect(() => {
         AOS.init({
@@ -336,12 +337,38 @@ const Home = () => {
                         </div>
                         <div className="col-lg-7">
                             <div className="d-flex align-items-center gap-4">
-                                <i className="bi bi-chevron-left fw-bold cursor-pointer hover-opacity text-dark" style={{ fontSize: '3rem', WebkitTextStroke: '2px black' }}></i>
-                                <div className="testimonial-content text-center">
-                                    <p className="fs-5 text-dark lh-base mb-4">"Blue Planet’s solutions have been an integral part of our sustainability strategy. Their transparency and commitment to ethical recycling ensure that we stay compliant with global e-waste regulations."</p>
-                                    <h6 className="fw-bold text-dark mb-0">— Client Name, Position, Company</h6>
+                                <button className="btn p-0 border-0 bg-transparent" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                                    <i className="bi bi-chevron-left text-dark" style={{ fontSize: '3rem', WebkitTextStroke: '2px black' }}></i>
+                                    <span className="visually-hidden">Previous</span>
+                                </button>
+
+                                <div id="testimonialCarousel" className="carousel slide flex-grow-1" data-bs-ride="carousel">
+                                    <div className="carousel-inner">
+                                        <div className="carousel-item active" data-bs-interval="4000">
+                                            <div className="testimonial-content text-center">
+                                                <p className="fs-5 text-dark lh-base mb-4">"Blue Planet’s solutions have been an integral part of our sustainability strategy. Their transparency and commitment to ethical recycling ensure that we stay compliant with global e-waste regulations."</p>
+                                                <h6 className="fw-bold text-dark mb-0">— Client Name 1, Position, Company</h6>
+                                            </div>
+                                        </div>
+                                        <div className="carousel-item" data-bs-interval="4000">
+                                            <div className="testimonial-content text-center">
+                                                <p className="fs-5 text-dark lh-base mb-4">"Blue Planet’s solutions have been an integral part of our sustainability strategy. Their transparency and commitment to ethical recycling ensure that we stay compliant with global e-waste regulations."</p>
+                                                <h6 className="fw-bold text-dark mb-0">— Client Name 2, Position, Company</h6>
+                                            </div>
+                                        </div>
+                                        <div className="carousel-item" data-bs-interval="4000">
+                                            <div className="testimonial-content text-center">
+                                                <p className="fs-5 text-dark lh-base mb-4">"Blue Planet’s solutions have been an integral part of our sustainability strategy. Their transparency and commitment to ethical recycling ensure that we stay compliant with global e-waste regulations."</p>
+                                                <h6 className="fw-bold text-dark mb-0">— Client Name 3, Position, Company</h6>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <i className="bi bi-chevron-right fw-bold cursor-pointer hover-opacity text-dark" style={{ fontSize: '3rem', WebkitTextStroke: '2px black' }}></i>
+
+                                <button className="btn p-0 border-0 bg-transparent" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                                    <i className="bi bi-chevron-right text-dark" style={{ fontSize: '3rem', WebkitTextStroke: '2px black' }}></i>
+                                    <span className="visually-hidden">Next</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -395,16 +422,51 @@ const Home = () => {
                 <div className="container">
                     <h2 className="display-5 fw-bold mb-3 text-dark">Business relations</h2>
                     <p className="text-secondary fs-4 fw-light mb-3">Trusted by the Industry’s best</p>
-                    <div className="d-flex justify-content-center align-items-center gap-4">
-                        <i className="bi bi-chevron-left fw-bolder cursor-pointer hover-opacity d-none d-md-block" style={{ fontSize: '3rem', color: '#5c9c44', textShadow: '0px 0px 3px #5c9c44' }}></i>
-                        <div className="d-flex justify-content-center align-items-center gap-5 business-logos">
-                            <img src={client5} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Landbell" />
-                            <img src={client3} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Havells" />
-                            <img src={client1} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Croma" />
-                            <img src={client2} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Maruti Suzuki" />
-                            <img src={client4} style={{ height: '60px', width: 'auto', maxWidth: '180px', objectFit: 'contain' }} alt="Reliance Digital" />
+                    <div className="d-flex align-items-center gap-4">
+                        <button
+                            className="btn p-0 border-0 bg-transparent"
+                            type="button"
+                            onMouseDown={() => setIsFastScroll(true)}
+                            onMouseUp={() => setIsFastScroll(false)}
+                            onMouseLeave={() => setIsFastScroll(false)}
+                        >
+                            <i className="bi bi-chevron-left" style={{ fontSize: '3rem', color: '#5c9c44', WebkitTextStroke: '2px #5c9c44' }}></i>
+                        </button>
+
+                        <div className="logo-slider flex-grow-1">
+                            <div className={`logo-slide-track ${isFastScroll ? 'fast-scroll' : ''}`}>
+                                {/* First Set */}
+                                <div className="slide"><img src={client5} alt="Landbell" /></div>
+                                <div className="slide"><img src={client3} alt="Havells" /></div>
+                                <div className="slide"><img src={client1} alt="Croma" /></div>
+                                <div className="slide"><img src={client2} alt="Maruti Suzuki" /></div>
+                                <div className="slide"><img src={client4} alt="Reliance Digital" /></div>
+
+                                {/* Duplicate Set 1 */}
+                                <div className="slide"><img src={client5} alt="Landbell" /></div>
+                                <div className="slide"><img src={client3} alt="Havells" /></div>
+                                <div className="slide"><img src={client1} alt="Croma" /></div>
+                                <div className="slide"><img src={client2} alt="Maruti Suzuki" /></div>
+                                <div className="slide"><img src={client4} alt="Reliance Digital" /></div>
+
+                                {/* Duplicate Set 2 */}
+                                <div className="slide"><img src={client5} alt="Landbell" /></div>
+                                <div className="slide"><img src={client3} alt="Havells" /></div>
+                                <div className="slide"><img src={client1} alt="Croma" /></div>
+                                <div className="slide"><img src={client2} alt="Maruti Suzuki" /></div>
+                                <div className="slide"><img src={client4} alt="Reliance Digital" /></div>
+                            </div>
                         </div>
-                        <i className="bi bi-chevron-right fw-bolder cursor-pointer hover-opacity d-none d-md-block" style={{ fontSize: '3rem', color: '#5c9c44', textShadow: '0px 0px 3px #5c9c44' }}></i>
+
+                        <button
+                            className="btn p-0 border-0 bg-transparent"
+                            type="button"
+                            onMouseDown={() => setIsFastScroll(true)}
+                            onMouseUp={() => setIsFastScroll(false)}
+                            onMouseLeave={() => setIsFastScroll(false)}
+                        >
+                            <i className="bi bi-chevron-right" style={{ fontSize: '3rem', color: '#5c9c44', WebkitTextStroke: '2px #5c9c44' }}></i>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -414,7 +476,7 @@ const Home = () => {
                 <div className="container">
                     <div className="row g-4 text-center">
                         <div className="col-md-4">
-                            <h3 className="fw-bold mb-4 text-dark">Press Release</h3>
+                            <h2 className="fw-bold mb-4 text-dark">Press Release</h2>
                             <div className="rounded-5 overflow-hidden position-relative shadow" style={{ height: '350px' }}>
                                 {activeVideo === 'press' ? (
                                     <iframe
@@ -439,7 +501,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-md-4">
-                            <h3 className="fw-bold mb-4 text-dark">Featured By</h3>
+                            <h2 className="fw-bold mb-4 text-dark">Featured By</h2>
                             <div className="rounded-5 overflow-hidden position-relative shadow" style={{ height: '350px' }}>
                                 {activeVideo === 'featured' ? (
                                     <iframe
@@ -464,7 +526,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-md-4">
-                            <h3 className="fw-bold mb-4 text-dark">Podcast</h3>
+                            <h2 className="fw-bold mb-4 text-dark">Podcast</h2>
                             <div className="rounded-5 overflow-hidden position-relative shadow" style={{ height: '350px' }}>
                                 {activeVideo === 'podcast' ? (
                                     <iframe
