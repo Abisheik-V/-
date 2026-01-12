@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', 'Open Sans', 'Lato', 'Helvetica Neue', Arial, sans-serif;
     color: var(--text-dark);
 }
 
@@ -27,6 +27,7 @@ body {
 
 .nav-link {
     font-weight: 600;
+    font-family: 'Montserrat', 'Poppins', 'Inter', 'Helvetica Neue', Arial, sans-serif;
     /* Slightly bolder */
     color: var(--text-dark) !important;
     font-size: 1.2rem;
@@ -522,5 +523,152 @@ body {
     /* Reduce section padding on mobile for tighter spacing */
     .section-padding {
         padding: 15px 0;
+    }
+}
+/* =========================================
+   Who We Are - Responsive Media Queries
+   ========================================= */
+
+/* Prevent global horizontal scroll */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Tablet and Mobile adjustments (max-width: 991px) */
+@media (max-width: 991px) {
+    /* General Container adjustments */
+    .container {
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        overflow-x: hidden;
+    }
+
+    /* Intro Quote Section */
+    .d-flex.justify-content-center.align-items-center.mb-3.gap-5 {
+        flex-direction: column;
+        gap: 1.5rem !important;
+        text-align: center;
+    }
+
+    .d-flex.justify-content-center.align-items-center.mb-3.gap-5 .text-start {
+        text-align: center !important;
+    }
+
+    /* Resize Intro Text */
+    .d-flex.justify-content-center.align-items-center.mb-3.gap-5 h3 {
+        font-size: 1.8rem !important;
+    }
+    
+    .d-flex.justify-content-center.align-items-center.mb-3.gap-5 h1 {
+        font-size: 2.5rem !important;
+    }
+
+    /* Intro Sprout Image */
+    .intro-sprout-img {
+        display: none !important; /* Hide on mobile/tablet to prevent overflow */
+    }
+
+    /* What is E-Waste Section */
+    .section-padding.text-white[style*='background-color: #003366'] .row {
+        flex-direction: column;
+    }
+
+    .section-padding.text-white[style*='background-color: #003366'] .col-lg-7 {
+        padding-left: 0 !important;
+        margin-top: 2rem;
+    }
+
+    /* Fix Image Negative Margin */
+    .section-padding.text-white[style*='background-color: #003366'] img.img-fluid {
+        margin-right: 0 !important;
+        height: auto !important;
+        max-height: 400px !important;
+        width: 100% !important;
+        object-fit: contain;
+    }
+    
+    .section-padding.text-white[style*='background-color: #003366'] div[style*='min-height: 400px'] {
+        min-height: auto !important;
+    }
+
+    /* White Background Shape behind E-Waste Image */
+    .section-padding.text-white[style*='background-color: #003366'] .bg-white.position-absolute {
+        width: 100% !important;
+        border-radius: 40px !important;
+        position: static !important;
+        height: 100% !important;
+    }
+
+    /* What We Recycle Section */
+    .d-none.d-lg-block.position-absolute[style*='background-color: #dee2e6'] {
+        display: none !important; /* Hide vertical dividers */
+    }
+
+    /* Adjust Recycle Item Spacing */
+    .col-lg-4.mb-5.mb-lg-0 {
+        margin-bottom: 3rem !important;
+    }
+
+    /* Stats/Key Benefits Grid */
+    .key-benefits-grid .col-lg-4 {
+        margin-bottom: 1.5rem;
+    }
+
+    /* CTA Section Typography */
+    .section-padding.pt-4.pb-0.text-center h3 {
+        font-size: 1.8rem !important;
+    }
+    
+    .section-padding.pt-4.pb-0.text-center h2 {
+        font-size: 2rem !important;
+    }
+    
+    .section-padding.pt-4.pb-0.text-center p {
+        font-size: 1rem !important;
+        padding: 0 10px;
+    }
+
+    /* Comparison Table (Blue Planet Advantage) */
+    .border.border-2 {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Mobile adjustments (max-width: 576px) */
+@media (max-width: 576px) {
+    /* Further reduce font sizes */
+    .display-3 {
+        font-size: 2.5rem !important;
+    }
+    
+    h1 {
+        font-size: 2rem !important;
+    }
+    
+    h2 {
+        font-size: 1.75rem !important;
+    }
+
+    /* Adjust padding for sections */
+    .section-padding {
+        padding: 30px 0 !important;
+    }
+
+    /* Navbar Brand fix */
+    .navbar-brand img {
+        height: 50px !important;
+    }
+    
+    /* Footer Socials */
+    .footer-wrapper .d-flex.gap-3 img {
+        height: 25px !important;
+    }
+
+    /* Process Diagram Image */
+    img[src*='process_diagram_full'] {
+        width: 100% !important;
+        height: auto !important;
     }
 }

@@ -319,7 +319,7 @@ const Home = () => {
 
                             <h4 className="fw-bold text-secondary mb-3" style={{ textAlign: 'left' }}>E-Waste Awareness Drive</h4>
 
-                            <p className="text-muted lh-base" style={{ textAlign: 'left' }}>
+                            <p className="text-muted lh-base" style={{ textAlign: 'left', fontFamily: "'Outfit', sans-serif" }}>
                                 The Zero Waste Day E-Waste Drive at Prestige Lakeside Habitat, jointly led by Flipkart Reset and Blue Planet, enabled residents to responsibly dispose of their unused electronics while raising awareness about sustainable recycling. The initiative received an encouraging response and reinforced the importance of community participation in reducing e-waste
                             </p>
                         </div>
