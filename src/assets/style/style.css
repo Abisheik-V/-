@@ -1,6 +1,27 @@
 /* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
 
+@font-face {
+    font-family: 'RalewayW';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/raleway/v37/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtapYCP.ttf) format('truetype');
+    unicode-range: U+0077, U+0057;
+}
+
+@font-face {
+    font-family: 'RalewayW-Paragraph';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/raleway/v37/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaooCP.ttf) format('truetype');
+    unicode-range: U+0077, U+0057;
+    size-adjust: 100%;
+}
+
+
+
 :root {
     --primary-green: #4CAF50;
     --dark-green: #2E7D32;
@@ -16,6 +37,11 @@ body {
 
 .home-container {
     overflow-x: hidden;
+}
+
+.home-container button,
+.home-container input {
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 /* Navbar */
@@ -37,10 +63,22 @@ body {
     color: var(--primary-green) !important;
 }
 
+.home-container .nav-link {
+    font-family: 'Montserrat', 'Poppins', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.home-container .footer-container {
+    font-family: 'Outfit', sans-serif !important;
+}
+
 /* Hero Section */
 .hero-wrapper {
     background-color: #fff;
     padding-top: 0;
+}
+
+.hero-wrapper h1 {
+    font-family: 'RalewayW', "Segoe UI", Arial, sans-serif;
 }
 
 .hero-rounded-container {
@@ -73,6 +111,11 @@ body {
 }
 
 /* Who We Are Diagram */
+#who-we-are h1 {
+    font-family: 'RalewayW', "Segoe UI", Arial, sans-serif;
+    font-weight: bold;
+}
+
 .icon-circle {
     width: 90px;
     height: 90px;
@@ -156,6 +199,34 @@ body {
 }
 
 /* Why Choose Us */
+#why-choose-us {
+    font-family: 'RalewayW-Paragraph', "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+}
+
+#why-choose-us strong,
+#why-choose-us span {
+    font-family: 'RalewayW', "Segoe UI", Arial, sans-serif;
+    font-weight: 800;
+}
+
+.custom-newsletter-input {
+    background-color: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.171) !important;
+    color: #fff !important;
+}
+
+.custom-newsletter-input::placeholder {
+    color: #fff !important;
+    opacity: 0.8;
+}
+
+.custom-newsletter-input:focus {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
 .choice-card {
     background: #fff;
     transition: all 0.3s ease;
@@ -440,6 +511,14 @@ body {
         width: 100%;
         margin-top: 5px;
     }
+}
+
+/* Footer Arrows Bolder */
+.footer-links i {
+    -webkit-text-stroke: 1px #ffffff;
+    font-weight: 900 !important;
+    color: #ffffff !important;
+    opacity: 1 !important;
 }
 
 /* Responsive for Small Desktop / Large Tablet (992px - 1200px) */
@@ -779,5 +858,66 @@ body {
 
     100% {
         transform: translateX(calc(-250px * 5));
+    }
+}
+
+/* 
+   ==========================================================================
+   Global Media Queries - Dynamic Resolution (1200px - 1400px & 768px)
+   ========================================================================== 
+*/
+
+/* Laptop / Desktop Scaling (1200px - 1400px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .container {
+        max-width: 1140px;
+        /* Standard XL Container */
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+        /* Slightly smaller than full desktop (3rem) */
+        margin-left: 80px;
+        margin-top: -170px;
+    }
+
+    .hero-demo-btn {
+        margin-left: -120px;
+    }
+
+    .navbar-brand img {
+        height: 75px;
+    }
+}
+
+/* Tablet Portrait Specific (max-width: 768px) */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.4rem;
+        margin-left: 0;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .hero-wrapper h1 {
+        text-align: center;
+    }
+
+    .hero-demo-btn {
+        margin: 20px auto 0;
+        display: block;
+        margin-left: auto !important;
+        width: fit-content;
+    }
+
+    .section-padding {
+        padding: 30px 0;
+    }
+
+    /* Ensure cards grid well on tablets */
+    .col-lg-4,
+    .col-lg-3,
+    .col-lg-6 {
+        margin-bottom: 20px;
     }
 }

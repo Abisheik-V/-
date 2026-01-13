@@ -42,6 +42,8 @@ import fullProcessDiagram from '../assets/images/process_diagram_full.png';
 import bulletArrow from '../assets/images/bullet_arrow.png';
 import tableBgWave from '../assets/images/table_bg_wave.png';
 import footerSocials from '../assets/images/footer_socials.png';
+import footerNewsletterIcon from '../assets/images/footer_newsletter_icon.png';
+import footerCallIcon from '../assets/images/footer_call_icon.png';
 
 const WhatWeDo = () => {
     useEffect(() => {
@@ -108,20 +110,20 @@ const WhatWeDo = () => {
                             <img src={introSprout} alt="Sustainability" className="img-fluid" style={{ maxHeight: '350px' }} />
                         </div>
                         <div className="col-lg-7 ps-lg-5 border-start border-2 border-secondary border-opacity-25" style={{ textAlign: 'left' }}>
-                            <h2 className="fw-bold mb-3 display-6" style={{ color: '#2e7d32' }}>Sustainability at<br />Blue Planet E-Waste<br />Solutions<span className="fw-bold text-dark">—</span></h2>
-                            <h5 className="text-dark fw-normal lh-base display-6" style={{ fontSize: '1.75rem' }}>
+                            <h2 className="fw-bold mb-3 display-6" style={{ color: '#2e7d32', fontFamily: "'RalewayW', 'Segoe UI', Arial, sans-serif" }}>Sustainability at<br />Blue Planet E-Waste<br />Solutions<span className="fw-bold text-dark">—</span></h2>
+                            <h5 className="text-dark fw-normal lh-base display-6" style={{ fontSize: '1.75rem', fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>
                                 Driving Circular Transformation<br />
-                                Through <span className="fw-bold text-dark">Refurbishment</span>,<br />
-                                <span className="fw-bold text-dark">Responsible Recycling</span> and <span className="fw-bold text-dark">Carbon<br />Reduction</span>
+                                Through <span className="fw-bold text-dark" style={{ fontFamily: "'RalewayW', 'Segoe UI', Arial, sans-serif" }}>Refurbishment</span>,<br />
+                                <span className="fw-bold text-dark" style={{ fontFamily: "'RalewayW', 'Segoe UI', Arial, sans-serif" }}>Responsible Recycling</span> and <span className="fw-bold text-dark" style={{ fontFamily: "'RalewayW', 'Segoe UI', Arial, sans-serif" }}>Carbon<br />Reduction</span>
                             </h5>
                         </div>
                     </div>
 
                     <div className="text-center mx-auto mt-5" style={{ maxWidth: '900px' }}>
-                        <h2 className="mb-0 text-dark display-4" style={{ fontWeight: '400' }}>Technology evolves fast.</h2>
-                        <h2 className="mb-4 text-dark display-4 fw-bold">Waste should not.</h2>
+                        <h2 className="mb-0 text-dark display-4" style={{ fontWeight: '400', fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Technology evolves fast.</h2>
+                        <h2 className="mb-4 text-dark display-4 fw-bold" style={{ fontFamily: "'RalewayW', 'Segoe UI', Arial, sans-serif" }}>Waste should not.</h2>
                         <div className="d-flex justify-content-center">
-                            <p className="text-secondary mb-0" style={{ fontSize: '1.1rem', textAlign: 'center', lineHeight: '1.5' }}>
+                            <p className="text-secondary mb-0" style={{ fontSize: '1.1rem', textAlign: 'center', lineHeight: '1.5', fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>
                                 At Blue Planet E-Waste Solutions, we are building one of India's most advanced and transparent circular ecosystems for electronic waste — enabling organizations to securely recycle, refurbish, and recover value from end-of-life electronic assets while protecting the planet and future generations.
                             </p>
                         </div>
@@ -252,40 +254,42 @@ const WhatWeDo = () => {
             <section className="section-padding pt-0 position-relative overflow-hidden">
                 <div className="position-absolute top-50 start-50 translate-middle w-100 h-100" style={{ backgroundImage: `url(${benefitBg})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', zIndex: -1 }}></div>
                 <div className="container position-relative z-1">
-                    <h2 className="text-center fw-bold mb-3">Why Blue Planet <span className="fw-bolder">E-Waste Solutions</span></h2>
+                    <h2 className="text-center mb-3" style={{ fontSize: '2.5rem' }}>
+                        <span className="fw-normal" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Why Blue Planet</span> <span className="fw-bold" style={{ fontFamily: "'RalewayW', 'Segoe UI', Arial, sans-serif" }}>E-Waste Solutions</span>
+                    </h2>
 
                     <div className="row g-3 justify-content-center">
                         {/* Our Differentiators */}
                         <div className="col-lg-5">
                             <div className="h-100 overflow-hidden border shadow-sm border-dark border-2" style={{ borderRadius: '40px' }}>
                                 <div className="p-4 text-center text-white" style={{ backgroundColor: '#003366' }}>
-                                    <h4 className="fw-bold mb-0">Our Differentiators</h4>
+                                    <h4 className="fw-bold mb-0" style={{ fontFamily: "'RalewayW', 'Segoe UI', Arial, sans-serif" }}>Our Differentiators</h4>
                                 </div>
                                 <div className="p-4 bg-white" style={{ minHeight: '500px' }}>
                                     <ul className="list-unstyled d-flex flex-column gap-4 mb-0 justify-content-center h-100">
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={blue1} className="w-100" alt="Certified" /></div>
-                                            <div className="fw-bold text-dark fs-5 text-start">OEM-certified refurbishment & recycling</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>OEM-certified refurbishment & recycling</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={blue2} className="w-100" alt="Transparency" /></div>
-                                            <div className="fw-bold text-dark fs-5 text-start">Transparency & full traceability</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Transparency & full traceability</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={blue3} className="w-100" alt="Efficiency" /></div>
-                                            <div className="fw-bold text-dark fs-5 text-start">Zero-landfill & zero-leakage operations</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Zero-landfill & zero-leakage operations</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={blue4} className="w-100" alt="Secure data" /></div>
-                                            <div className="fw-bold text-dark fs-5 text-start">Secure, certified data protection</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Secure, certified data protection</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={blue5} className="w-100" alt="Circular economy" /></div>
-                                            <div className="fw-bold text-dark fs-5 text-start">Circular economy model</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Circular economy model</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={iconCarbon} className="w-100" alt="Carbon credit" /></div>
-                                            <div className="fw-bold text-dark fs-5 text-start">Carbon credit generation</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Carbon credit generation</div>
                                         </li>
                                     </ul>
                                 </div>
@@ -296,33 +300,33 @@ const WhatWeDo = () => {
                         <div className="col-lg-5">
                             <div className="h-100 overflow-hidden border shadow-sm border-dark border-2" style={{ borderRadius: '40px' }}>
                                 <div className="p-4 text-center text-white" style={{ backgroundColor: '#579d5e' }}>
-                                    <h4 className="fw-bold mb-0">What They Deliver</h4>
+                                    <h4 className="fw-bold mb-0" style={{ fontFamily: "'RalewayW', 'Segoe UI', Arial, sans-serif" }}>What They Deliver</h4>
                                 </div>
                                 <div className="p-4 bg-white" style={{ minHeight: '500px' }}>
                                     <ul className="list-unstyled d-flex flex-column gap-4 mb-0 justify-content-center h-100">
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={green1} className="w-100" alt="Reliability" /></div>
-                                            <div className="fw-bold text-dark fs-5 text-start">Guaranteed reliability & performance</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Guaranteed reliability & performance</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={green2} className="w-100" alt="Accountability" /></div>
-                                            <div className="fw-bold text-dark fs-5 text-start">100% accountability from source to disposal</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>100% accountability from source to disposal</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={green3} className="w-100" alt="Ethical" /></div>
-                                            <div className="fw-bold text-dark fs-5 text-start">Sustainable, ethical waste handling</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Sustainable, ethical waste handling</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={green4} className="w-100" alt="Risk" /></div>
-                                            <div className="fw-bold text-dark fs-5 text-start">Eliminates corporate risk & liability</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Eliminates corporate risk & liability</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={iconUpcycle} className="w-100" alt="Value" /></div>
-                                            <div className="fw-bold text-dark fs-5 text-start">Waste converted into enterprise value</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Waste converted into enterprise value</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={iconPrecious} className="w-100" alt="Monetizable" /></div>
-                                            <div className="fw-bold text-dark fs-5 text-start">Monetizable sustainability impact</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Monetizable sustainability impact</div>
                                         </li>
                                     </ul>
                                 </div>
@@ -389,9 +393,9 @@ const WhatWeDo = () => {
             <section className="section-padding pt-5 pb-5 bg-white text-center position-relative overflow-hidden">
                 <img src={tableBgWave} alt="" className="position-absolute w-100" style={{ top: '60%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 0, opacity: 0.6 }} />
                 <div className="container position-relative z-1" style={{ fontFamily: '"Outfit", sans-serif' }}>
-                    <h2 className="mb-0 display-6" style={{ fontWeight: '400', color: '#000' }}>Together, We Can Build a</h2>
-                    <h2 className="display-4 fw-bold mb-4" style={{ color: '#000' }}>Regenerative Future</h2>
-                    <p className="text-secondary mx-auto fs-5" style={{ maxWidth: '950px', lineHeight: '1.6', textAlign: 'center' }}>
+                    <h2 className="mb-0 display-6" style={{ fontWeight: '400', color: '#000', fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Together, We Can Build a</h2>
+                    <h2 className="display-4 fw-bold mb-4" style={{ color: '#000', fontFamily: "'RalewayW', 'Segoe UI', Arial, sans-serif" }}>Regenerative Future</h2>
+                    <p className="text-secondary mx-auto fs-5" style={{ maxWidth: '950px', lineHeight: '1.6', textAlign: 'center', fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>
                         Every device recycled through Blue Planet E-Waste Solutions is a step toward a cleaner planet,<br />
                         a stronger circular economy, and a more resilient world.
                     </p>
@@ -401,9 +405,9 @@ const WhatWeDo = () => {
             {/* Footer */}
             <footer className="footer-wrapper p-4">
                 <div className="container-fluid bg-success text-white rounded-5 p-5 position-relative overflow-hidden footer-container">
-                    <div className="row g-5">
+                    <div className="row g-5 text-start">
                         {/* Left Column */}
-                        <div className="col-lg-4 pe-lg-5 border-end border-white border-opacity-25 text-start">
+                        <div className="col-lg-4 pe-lg-5 border-end border-white border-opacity-25">
                             <img src={placeHolder} style={{ width: '220px', height: 'auto' }} alt="BluePlanet" className="mb-4" />
                             <h2 className="fw-bold mb-3">Turning Waste to<br />Treasure</h2>
                             <p className="text-white opacity-75 mb-5 lh-base" style={{ fontSize: '0.95rem' }}>Blue Planet E-Waste Solutions is a leading integrated technology-driven platform for responsible e-waste recycling, refurbishment, and resource recovery. We transform discarded electronics into valuable materials through ethical, compliant, and circular economy practices.</p>
@@ -413,24 +417,24 @@ const WhatWeDo = () => {
                         </div>
 
                         {/* Middle Content */}
-                        <div className="col-lg-5 d-flex flex-column ps-lg-5 text-start">
+                        <div className="col-lg-5 d-flex flex-column ps-lg-5">
                             <div className="row mb-5">
                                 <div className="col-sm-6">
                                     <h4 className="fw-bold mb-4">About</h4>
                                     <ul className="list-unstyled footer-links d-flex flex-column gap-1">
-                                        <li><Link to="/about" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short text-white"></i>About</Link></li>
-                                        <li><Link to="/who-we-are" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short text-white"></i>Who we are</Link></li>
-                                        <li><Link to="/what-we-do" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short text-white"></i>What we do</Link></li>
-                                        <li><Link to="/impact" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short text-white"></i>Impact</Link></li>
-                                        <li><Link to="/contact-us" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short text-white"></i>Contact us</Link></li>
+                                        <li><Link to="/about" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short fs-5 fw-bold text-white"></i>About</Link></li>
+                                        <li><Link to="/who-we-are" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short fs-5 fw-bold text-white"></i>Who we are</Link></li>
+                                        <li><Link to="/what-we-do" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short fs-5 fw-bold text-white"></i>What we do</Link></li>
+                                        <li><Link to="/impact" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short fs-5 fw-bold text-white"></i>Impact</Link></li>
+                                        <li><Link to="/contact-us" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short fs-5 fw-bold text-white"></i>Contact us</Link></li>
                                     </ul>
                                 </div>
                                 <div className="col-sm-6">
                                     <h4 className="fw-bold mb-4">Services</h4>
                                     <ul className="list-unstyled footer-links d-flex flex-column gap-1">
-                                        <li><Link to="/e-waste-recycling" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short text-white"></i>E-Waste Recycling</Link></li>
-                                        <li><Link to="/refurbishment" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short text-white"></i>Refurbishment</Link></li>
-                                        <li><Link to="/precious-metals" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short text-white"></i>Precious Metals Recovery</Link></li>
+                                        <li><Link to="/e-waste-recycling" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short fs-5 fw-bold text-white"></i>E-Waste Recycling</Link></li>
+                                        <li><Link to="/refurbishment" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short fs-5 fw-bold text-white"></i>Refurbishment</Link></li>
+                                        <li><Link to="/precious-metals" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short fs-5 fw-bold text-white"></i>Precious Metals Recovery</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -438,7 +442,7 @@ const WhatWeDo = () => {
                             <div className="newsletter-box mt-auto">
                                 <h3 className="fw-normal mb-4">Newsletters</h3>
                                 <div className="position-relative w-100">
-                                    <i className="bi bi-envelope position-absolute top-50 translate-middle-y ms-4 fs-5 text-dark" style={{ zIndex: 5, color: '#2e5a27' }}></i>
+                                    <img src={footerNewsletterIcon} className="position-absolute top-50 translate-middle-y ms-4" style={{ zIndex: 5, width: '24px', height: 'auto' }} alt="Newsletter" />
                                     <input type="email" className="form-control rounded-pill border-0 py-3 ps-5 pe-5 custom-newsletter-input" placeholder="Email Address" style={{ paddingLeft: '3.5rem !important' }} />
                                     <button className="btn rounded-pill position-absolute end-0 top-50 translate-middle-y me-2 px-4 py-2 fw-bold text-white shadow-none" style={{ backgroundColor: '#000', fontSize: '0.9rem' }}>Submit</button>
                                 </div>
@@ -446,7 +450,7 @@ const WhatWeDo = () => {
                         </div>
 
                         {/* Right Column */}
-                        <div className="col-lg-3 ps-lg-4 text-start">
+                        <div className="col-lg-3 ps-lg-4">
                             <h6 className="fw-bold mb-3 text-white">Corporate Office</h6>
                             <p className="text-white-50 opacity-75 mb-4 lh-base" style={{ fontSize: '0.9rem' }}>202, 2nd floor, SAS Tower<br />Sector 38, Gurugram,<br />Haryana 122001</p>
 
@@ -455,7 +459,7 @@ const WhatWeDo = () => {
 
                             <h5 className="fw-bold mb-2">Call Us</h5>
                             <div className="d-flex align-items-center gap-2">
-                                <i className="bi bi-telephone-fill"></i>
+                                <img src={footerCallIcon} alt="Call Us" style={{ width: '24px', height: 'auto' }} />
                                 <span className="fw-bold fs-5">18003090950</span>
                             </div>
                         </div>

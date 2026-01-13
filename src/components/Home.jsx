@@ -6,6 +6,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../assets/style/style.css';
 import heroBg from '../assets/images/hero_bg.png';
+import footerNewsletterIcon from '../assets/images/footer_newsletter_icon.png';
+import footerCallIcon from '../assets/images/footer_call_icon.png';
 import service1 from '../assets/images/service_1.png';
 import service2 from '../assets/images/service_2.png';
 import service3 from '../assets/images/service_3.png';
@@ -235,8 +237,8 @@ const Home = () => {
             {/* Why Choose Us */}
             <section className="section-padding pt-0">
                 <div className="container">
-                    <h2 className="mb-3 text-center" style={{ fontSize: '3rem' }}>Why Choose <span className="fw-bold">Blue Planet E-Waste Solutions?</span></h2>
-                    <p className="text-muted mb-5 text-center w-100 mx-auto" style={{ fontSize: '1.5rem' }}>At Blue Planet, we are committed to leading the transition towards a sustainable future through:</p>
+                    <h2 id="why-choose-us" className="mb-3 text-center" style={{ fontSize: '3.2rem' }}>Why Choose <span className="fw-bold">Blue Planet E-Waste Solutions?</span></h2>
+                    <h1 className="text-muted mb-5 text-center w-100 mx-auto" style={{ fontSize: '1.6rem' }}>At Blue Planet, we are committed to leading the transition towards a sustainable future through:</h1>
 
                     <div className="row g-4 justify-content-center">
                         <div className="col-md-6">
@@ -320,7 +322,7 @@ const Home = () => {
 
                             <h4 className="fw-bold text-secondary mb-3" style={{ textAlign: 'left' }}>E-Waste Awareness Drive</h4>
 
-                            <p className="text-muted lh-base" style={{ textAlign: 'left', fontFamily: '"Roboto Variable", "Segoe UI", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, Ubuntu, Cantarell, "Fira Sans", sans-serif', fontSize: '1.15rem' }}>
+                            <p className="text-muted lh-base" style={{ textAlign: 'left', fontFamily: "'RalewayW-Paragraph', \"Roboto Variable\", \"Segoe UI\", \"Helvetica Neue\", Helvetica, \"Lucida Grande\", Arial, Ubuntu, Cantarell, \"Fira Sans\", sans-serif", fontSize: '1.2rem' }}>
                                 The Zero Waste Day E-Waste Drive at Prestige Lakeside Habitat, jointly led by Flipkart Reset and Blue Planet, enabled residents to responsibly dispose of their unused electronics while raising awareness about sustainable recycling. The initiative received an encouraging response and reinforced the importance of community participation in reducing e-waste.
                             </p>
                         </div>
@@ -333,7 +335,7 @@ const Home = () => {
                 <div className="container">
                     <div className="row align-items-center justify-content-between">
                         <div className="col-lg-4 mb-4 mb-lg-0">
-                            <h2 className="display-4 text-dark" style={{ fontWeight: '600', color: '#000' }}>Discover the<br />eSmart way</h2>
+                            <h2 className="display-4 text-dark" style={{ fontWeight: '600', color: '#000', fontFamily: "'RalewayW', \"Segoe UI\", Arial, sans-serif" }}>Discover the<br />eSmart way</h2>
                         </div>
                         <div className="col-lg-7">
                             <div className="d-flex align-items-center gap-4">
@@ -346,19 +348,19 @@ const Home = () => {
                                     <div className="carousel-inner">
                                         <div className="carousel-item active" data-bs-interval="4000">
                                             <div className="testimonial-content text-center">
-                                                <p className="fs-5 text-dark lh-base mb-4">"Blue Planet’s solutions have been an integral part of our sustainability strategy. Their transparency and commitment to ethical recycling ensure that we stay compliant with global e-waste regulations."</p>
+                                                <p className="fs-5 text-dark lh-base mb-4" style={{ fontFamily: "'RalewayW-Paragraph', \"Segoe UI\", Arial, sans-serif" }}>"Blue Planet’s solutions have been an integral part of our sustainability strategy. Their transparency and commitment to ethical recycling ensure that we stay compliant with global e-waste regulations."</p>
                                                 <h6 className="fw-bold text-dark mb-0">— Client Name 1, Position, Company</h6>
                                             </div>
                                         </div>
                                         <div className="carousel-item" data-bs-interval="4000">
                                             <div className="testimonial-content text-center">
-                                                <p className="fs-5 text-dark lh-base mb-4">"Blue Planet’s solutions have been an integral part of our sustainability strategy. Their transparency and commitment to ethical recycling ensure that we stay compliant with global e-waste regulations."</p>
+                                                <p className="fs-5 text-dark lh-base mb-4" style={{ fontFamily: "'RalewayW-Paragraph', \"Segoe UI\", Arial, sans-serif" }}>"Blue Planet’s solutions have been an integral part of our sustainability strategy. Their transparency and commitment to ethical recycling ensure that we stay compliant with global e-waste regulations."</p>
                                                 <h6 className="fw-bold text-dark mb-0">— Client Name 2, Position, Company</h6>
                                             </div>
                                         </div>
                                         <div className="carousel-item" data-bs-interval="4000">
                                             <div className="testimonial-content text-center">
-                                                <p className="fs-5 text-dark lh-base mb-4">"Blue Planet’s solutions have been an integral part of our sustainability strategy. Their transparency and commitment to ethical recycling ensure that we stay compliant with global e-waste regulations."</p>
+                                                <p className="fs-5 text-dark lh-base mb-4" style={{ fontFamily: "'RalewayW-Paragraph', \"Segoe UI\", Arial, sans-serif" }}>"Blue Planet’s solutions have been an integral part of our sustainability strategy. Their transparency and commitment to ethical recycling ensure that we stay compliant with global e-waste regulations."</p>
                                                 <h6 className="fw-bold text-dark mb-0">— Client Name 3, Position, Company</h6>
                                             </div>
                                         </div>
@@ -594,7 +596,7 @@ const Home = () => {
                             <div className="newsletter-box mt-auto">
                                 <h3 className="fw-normal mb-4">Newsletters</h3>
                                 <div className="position-relative w-100">
-                                    <i className="bi bi-envelope position-absolute top-50 translate-middle-y ms-4 fs-5 text-dark" style={{ zIndex: 5, color: '#2e5a27' }}></i>
+                                    <img src={footerNewsletterIcon} className="position-absolute top-50 translate-middle-y ms-4" style={{ zIndex: 5, width: '24px', height: 'auto' }} alt="Newsletter" />
                                     <input type="email" className="form-control rounded-pill border-0 py-3 ps-5 pe-5 custom-newsletter-input" placeholder="Email Address" style={{ paddingLeft: '3.5rem !important' }} />
                                     <button className="btn rounded-pill position-absolute end-0 top-50 translate-middle-y me-2 px-4 py-2 fw-bold text-white shadow-none" style={{ backgroundColor: '#000', fontSize: '0.9rem' }}>Submit</button>
                                 </div>
@@ -611,7 +613,7 @@ const Home = () => {
 
                             <h5 className="fw-bold mb-2">Call Us</h5>
                             <div className="d-flex align-items-center gap-2">
-                                <i className="bi bi-telephone-fill"></i>
+                                <img src={footerCallIcon} alt="Call Us" style={{ width: '24px', height: 'auto' }} />
                                 <span className="fw-bold fs-5">18003090950</span>
                             </div>
                         </div>
