@@ -492,8 +492,8 @@ body {
         gap: 10px;
     }
 
-    .newsletter-box .bi-envelope {
-        top: 25px !important;
+    .newsletter-box img {
+        top: 28px !important;
         /* Adjust Icon position relative to input */
         transform: translateY(-50%) !important;
     }
