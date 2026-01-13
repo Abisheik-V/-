@@ -320,9 +320,9 @@ const Home = () => {
                             </h2>
                             <div className="bg-secondary mb-4 opacity-50" style={{ width: '250px', height: '3px' }}></div>
 
-                            <h4 className="fw-bold text-secondary mb-3" style={{ textAlign: 'left' }}>E-Waste Awareness Drive</h4>
+                            <h4 className="awareness-title mb-3" style={{ textAlign: 'left' }}>E-Waste Awareness Drive</h4>
 
-                            <p className="text-muted lh-base" style={{ textAlign: 'left', fontFamily: "'RalewayW-Paragraph', \"Roboto Variable\", \"Segoe UI\", \"Helvetica Neue\", Helvetica, \"Lucida Grande\", Arial, Ubuntu, Cantarell, \"Fira Sans\", sans-serif", fontSize: '1.2rem' }}>
+                            <p className="awareness-text lh-base" style={{ textAlign: 'left' }}>
                                 The Zero Waste Day E-Waste Drive at Prestige Lakeside Habitat, jointly led by Flipkart Reset and Blue Planet, enabled residents to responsibly dispose of their unused electronics while raising awareness about sustainable recycling. The initiative received an encouraging response and reinforced the importance of community participation in reducing e-waste.
                             </p>
                         </div>
@@ -598,7 +598,7 @@ const Home = () => {
                                 <div className="position-relative w-100">
                                     <img src={footerNewsletterIcon} className="position-absolute top-50 translate-middle-y ms-4" style={{ zIndex: 5, width: '24px', height: 'auto' }} alt="Newsletter" />
                                     <input type="email" className="form-control rounded-pill border-0 py-3 ps-5 pe-5 custom-newsletter-input" placeholder="Email Address" style={{ paddingLeft: '3.5rem !important' }} />
-                                    <button className="btn rounded-pill position-absolute end-0 top-50 translate-middle-y me-2 px-4 py-2 fw-bold text-white shadow-none" style={{ backgroundColor: '#000', fontSize: '0.9rem' }}>Submit</button>
+                                    <button className="btn rounded-pill position-absolute end-0 top-50 translate-middle-y me-2 px-4 py-2 text-white shadow-none" style={{ backgroundColor: '#000', fontSize: '0.9rem' }}>Submit</button>
                                 </div>
                             </div>
                         </div>

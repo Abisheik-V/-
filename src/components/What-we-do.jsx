@@ -444,7 +444,7 @@ const WhatWeDo = () => {
                                 <div className="position-relative w-100">
                                     <img src={footerNewsletterIcon} className="position-absolute top-50 translate-middle-y ms-4" style={{ zIndex: 5, width: '24px', height: 'auto' }} alt="Newsletter" />
                                     <input type="email" className="form-control rounded-pill border-0 py-3 ps-5 pe-5 custom-newsletter-input" placeholder="Email Address" style={{ paddingLeft: '3.5rem !important' }} />
-                                    <button className="btn rounded-pill position-absolute end-0 top-50 translate-middle-y me-2 px-4 py-2 fw-bold text-white shadow-none" style={{ backgroundColor: '#000', fontSize: '0.9rem' }}>Submit</button>
+                                    <button className="btn rounded-pill position-absolute end-0 top-50 translate-middle-y me-2 px-4 py-2 text-white shadow-none" style={{ backgroundColor: '#000', fontSize: '0.9rem' }}>Submit</button>
                                 </div>
                             </div>
                         </div>
