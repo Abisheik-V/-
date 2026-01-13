@@ -238,7 +238,7 @@ const Home = () => {
             <section className="section-padding pt-0">
                 <div className="container">
                     <h2 id="why-choose-us" className="mb-3 text-center" style={{ fontSize: '3.2rem' }}>Why Choose <span className="fw-bold">Blue Planet E-Waste Solutions?</span></h2>
-                    <h1 className="text-muted mb-5 text-center w-100 mx-auto" style={{ fontSize: '1.6rem' }}>At Blue Planet, we are committed to leading the transition towards a sustainable future through:</h1>
+                    <h1 className="text-muted mb-5 text-center w-100 mx-auto" style={{ fontSize: '1.5rem' }}>At Blue Planet, we are committed to leading the transition towards a sustainable future through:</h1>
 
                     <div className="row g-4 justify-content-center">
                         <div className="col-md-6">
