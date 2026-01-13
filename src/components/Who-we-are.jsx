@@ -101,7 +101,6 @@ const WhatWeDo = () => {
             </nav>
 
             {/* Hero Section */}
-            {/* Hero Section */}
             <header className="what-we-do-hero-section py-2">
                 <div className="container">
                     <div className="overflow-hidden position-relative" style={{ minHeight: '650px', borderRadius: '40px' }}>
@@ -124,10 +123,10 @@ const WhatWeDo = () => {
                         <div>
                             <div className="text-start">
                                 <h3 className="fw-bold mb-0 text-dark" style={{ fontSize: '2.5rem', lineHeight: '1.1' }}>
-                                    Reimagining <span style={{ color: 'hsla(104, 93%, 47%, 1.00)' }}>Waste</span>. Restoring <span style={{ color: 'hsla(104, 93%, 47%, 1.00)' }}>Value</span>.
+                                    Reimagining <span style={{ color: '#5bd330ff' }}>Waste</span>. Restoring <span style={{ color: '#5bd330ff' }}>Value</span>.
                                 </h3>
                                 <h1 className="fw-bold mb-0 text-dark mt-1" style={{ fontSize: '4rem', lineHeight: '1.1' }}>
-                                    Regenerating the <span style={{ color: 'hsla(104, 93%, 47%, 1.00)' }}>Planet</span>.
+                                    Regenerating the <span style={{ color: '#5bd330ff' }}>Planet</span>.
                                 </h1>
                                 <div className="mt-4" style={{ width: '80%', height: '2px', backgroundColor: '#e0e0e0' }}></div>
                             </div>
@@ -435,19 +434,19 @@ const WhatWeDo = () => {
                                 <div className="col-sm-6">
                                     <h4 className="fw-bold mb-4">About</h4>
                                     <ul className="list-unstyled footer-links d-flex flex-column gap-1">
-                                        <li><Link to="/about" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short "></i>About</Link></li>
-                                        <li><Link to="/who-we-are" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>Who we are</Link></li>
-                                        <li><Link to="/what-we-do" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>What we do</Link></li>
-                                        <li><Link to="/impact" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>Impact</Link></li>
-                                        <li><Link to="/contact-us" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>Contact us</Link></li>
+                                        <li><Link to="/about" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short text-white"></i>About</Link></li>
+                                        <li><Link to="/who-we-are" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short text-white"></i>Who we are</Link></li>
+                                        <li><Link to="/what-we-do" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short text-white"></i>What we do</Link></li>
+                                        <li><Link to="/impact" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short text-white"></i>Impact</Link></li>
+                                        <li><Link to="/contact-us" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short text-white"></i>Contact us</Link></li>
                                     </ul>
                                 </div>
                                 <div className="col-sm-6">
                                     <h4 className="fw-bold mb-4">Services</h4>
                                     <ul className="list-unstyled footer-links d-flex flex-column gap-1">
-                                        <li><Link to="/e-waste-recycling" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>E-Waste Recycling</Link></li>
-                                        <li><Link to="/refurbishment" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>Refurbishment</Link></li>
-                                        <li><Link to="/precious-metals" className="text-white text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short"></i>Precious Metals Recovery</Link></li>
+                                        <li><Link to="/e-waste-recycling" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short text-white"></i>E-Waste Recycling</Link></li>
+                                        <li><Link to="/refurbishment" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short text-white"></i>Refurbishment</Link></li>
+                                        <li><Link to="/precious-metals" className="text-white-50 text-decoration-none d-flex align-items-center gap-2"><i className="bi bi-arrow-right-short text-white"></i>Precious Metals Recovery</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -465,10 +464,10 @@ const WhatWeDo = () => {
                         {/* Right Column */}
                         <div className="col-lg-3 ps-lg-4">
                             <h6 className="fw-bold mb-3 text-white">Corporate Office</h6>
-                            <p className="text-white opacity-75 mb-4 lh-base" style={{ fontSize: '0.9rem' }}>202, 2nd floor, SAS Tower<br />Sector 38, Gurugram,<br />Haryana 122001</p>
+                            <p className="text-white-50 opacity-75 mb-4 lh-base" style={{ fontSize: '0.9rem' }}>202, 2nd floor, SAS Tower<br />Sector 38, Gurugram,<br />Haryana 122001</p>
 
                             <h6 className="fw-bold mb-3 text-white">Recycling Facility @ Binola</h6>
-                            <p className="text-white opacity-75 mb-4 lh-base" style={{ fontSize: '0.9rem' }}>Khewat No. 654/617 Min,<br />Khata No. 781, Rect No. 125,<br />Kill Binola Industrial Area<br />Main road, Binola Industrial<br />Area, Gurugram - 122413,<br />Haryana, India</p>
+                            <p className="text-white-50 opacity-75 mb-4 lh-base" style={{ fontSize: '0.9rem' }}>Khewat No. 654/617 Min,<br />Khata No. 781, Rect No. 125,<br />Kill Binola Industrial Area<br />Main road, Binola Industrial<br />Area, Gurugram - 122413,<br />Haryana, India</p>
 
                             <h5 className="fw-bold mb-2">Call Us</h5>
                             <div className="d-flex align-items-center gap-2">
