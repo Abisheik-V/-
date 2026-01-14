@@ -241,9 +241,8 @@ const WhatWeDo = () => {
             </section>
 
             {/* Who We Serve */}
-            <section className="section-padding pb-0 bg-white overflow-hidden">
+            <section className="section-padding pt-0 pb-0 bg-white overflow-hidden">
                 <div className="container text-center">
-                    <h2 className="fw-bold text-dark mb-3">Who We Serve</h2>
                     <div className="d-flex justify-content-center">
                         <img src={whoWeServeDiagram} alt="Who We Serve" className="img-fluid" style={{ maxWidth: '800px', width: '100%' }} />
                     </div>
