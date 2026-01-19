@@ -117,7 +117,7 @@ const WhatWeDo = () => {
             </header>
 
             {/* Intro Quote Section */}
-            <section className="bg-white section-padding pt-0 pb-0">
+            <section className="bg-white section-padding pt-5 pb-0">
                 <div className="container">
                     <div className="d-flex justify-content-center align-items-center mb-3 gap-5">
                         <div className="me-2">
@@ -126,10 +126,10 @@ const WhatWeDo = () => {
                         <div>
                             <div className="text-start">
                                 <h3 className="fw-bold mb-0 text-dark" style={{ fontSize: '2.5rem', lineHeight: '1.1', fontFamily: "'RalewayW', 'Segoe UI', Arial, sans-serif" }}>
-                                    Reimagining <span style={{ color: '#5bd330ff' }}>Waste</span>. Restoring <span style={{ color: '#5bd330ff' }}>Value</span>.
+                                    Reimagining <span style={{ color: 'hsla(104, 59%, 33%, 1.00)' }}>Waste</span>. Restoring <span style={{ color: 'hsla(104, 59%, 33%, 1.00)' }}>Value</span>.
                                 </h3>
                                 <h1 className="fw-bold mb-0 text-dark mt-1" style={{ fontSize: '4rem', lineHeight: '1.1', fontFamily: "'RalewayW', 'Segoe UI', Arial, sans-serif" }}>
-                                    Regenerating the <span style={{ color: '#5bd330ff' }}>Planet</span>.
+                                    Regenerating the <span style={{ color: 'hsla(104, 59%, 33%, 1.00)' }}>Planet</span>.
                                 </h1>
                                 <div className="mt-4" style={{ width: '80%', height: '2px', backgroundColor: '#e0e0e0' }}></div>
                             </div>
@@ -351,27 +351,27 @@ const WhatWeDo = () => {
                                 <div className="p-4 text-center text-white position-relative" style={{ backgroundColor: '#003366' }}>
                                     <h4 className="fw-bold mb-0 fs-4" style={{ fontFamily: "'RalewayW', 'Segoe UI', Arial, sans-serif" }}>Blue Planet Advantage</h4>
                                 </div>
-                                <div className="p-4 bg-white h-100">
-                                    <ul className="list-unstyled d-flex flex-column gap-4 mb-0 pt-2">
+                                <div className="p-4 bg-white h-100 d-flex flex-column">
+                                    <ul className="list-unstyled d-flex flex-column gap-3 mb-0 pt-2 flex-grow-1">
                                         <li className="d-flex align-items-center gap-3">
                                             <div style={{ width: '50px', flexShrink: 0 }}><img src={blue1} className="w-100" alt="Certified" /></div>
-                                            <div className="fw-medium text-dark text-start lh-sm fs-5" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Certified, compliant,<br />world-class recycling</div>
+                                            <div className="fw-normal text-dark text-start lh-sm fs-5" style={{ fontFamily: "'Raleway', sans-serif" }}>Certified, compliant,<br />world-class recycling</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3">
                                             <div style={{ width: '50px', flexShrink: 0 }}><img src={blue2} className="w-100" alt="Transparency" /></div>
-                                            <div className="fw-medium text-dark text-start lh-sm fs-5" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>End-to-end<br />transparency &<br />traceability</div>
+                                            <div className="fw-normal text-dark text-start lh-sm fs-5" style={{ fontFamily: "'RalewayW', sans-serif" }}>End-to-end<br />transparency &<br />traceability</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3">
                                             <div style={{ width: '50px', flexShrink: 0 }}><img src={blue3} className="w-100" alt="Efficiency" /></div>
-                                            <div className="fw-medium text-dark text-start lh-sm fs-5" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>High-efficiency<br />resource extraction</div>
+                                            <div className="fw-normal text-dark text-start lh-sm fs-5" style={{ fontFamily: "'RalewayW', sans-serif" }}>High-efficiency<br />resource extraction</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3">
                                             <div style={{ width: '50px', flexShrink: 0 }}><img src={blue4} className="w-100" alt="Secure data" /></div>
-                                            <div className="fw-medium text-dark text-start lh-sm fs-5" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Secure data<br />destruction</div>
+                                            <div className="fw-normal text-dark text-start lh-sm fs-5" style={{ fontFamily: "'RalewayW', sans-serif" }}>Secure data<br />destruction</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3">
                                             <div style={{ width: '50px', flexShrink: 0 }}><img src={blue5} className="w-100" alt="Circular economy" /></div>
-                                            <div className="fw-medium text-dark text-start lh-sm fs-5" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Circular economy &<br />carbon impact<br />reporting</div>
+                                            <div className="fw-normal text-dark text-start lh-sm fs-5" style={{ fontFamily: "'RalewayW', sans-serif" }}>Circular economy &<br />carbon impact<br />reporting</div>
                                         </li>
                                     </ul>
                                 </div>
@@ -384,23 +384,23 @@ const WhatWeDo = () => {
                                 <div className="p-4 text-center text-white position-relative" style={{ backgroundColor: '#58a065' }}>
                                     <h4 className="fw-bold mb-0 fs-4" style={{ fontFamily: "'RalewayW', 'Segoe UI', Arial, sans-serif" }}>What It Means</h4>
                                 </div>
-                                <div className="p-4 bg-white h-100">
-                                    <ul className="list-unstyled d-flex flex-column gap-4 mb-0 pt-2">
+                                <div className="p-4 bg-white h-100 d-flex flex-column">
+                                    <ul className="list-unstyled d-flex flex-column gap-3 mb-0 pt-2 flex-grow-1">
                                         <li className="d-flex align-items-center gap-3">
                                             <div style={{ width: '50px', flexShrink: 0 }}><img src={green1} className="w-100" alt="ISO" /></div>
-                                            <div className="fw-medium text-dark text-start lh-sm fs-5" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>ISO 9001, ISO 14001,<br />ISO 45001</div>
+                                            <div className="fw-normal text-dark text-start lh-sm fs-5" style={{ fontFamily: "'RalewayW', sans-serif" }}>ISO 9001, ISO 14001,<br />ISO 45001</div>
                                         </li>
-                                        <li className="d-flex align-items-center gap-3">
+                                        <li className="d-flex align-items-center gap-3 mt-4">
                                             <div style={{ width: '50px', flexShrink: 0 }}><img src={green2} className="w-100" alt="Precious metal" /></div>
-                                            <div className="fw-medium text-dark text-start lh-sm fs-5" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Advanced recycling &<br />precious metal<br />recovery</div>
+                                            <div className="fw-normal text-dark text-start lh-sm fs-5" style={{ fontFamily: "'RalewayW', sans-serif" }}>Advanced recycling &<br />precious metal<br />recovery</div>
                                         </li>
-                                        <li className="d-flex align-items-center gap-3">
+                                        <li className="d-flex align-items-center gap-3 mt-4">
                                             <div style={{ width: '50px', flexShrink: 0 }}><img src={green3} className="w-100" alt="Zero-risk" /></div>
-                                            <div className="fw-medium text-dark text-start lh-sm fs-5" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Zero-risk disposal for<br />sensitive assets</div>
+                                            <div className="fw-normal text-dark text-start lh-sm fs-5" style={{ fontFamily: "'RalewayW', sans-serif" }}>Zero-risk disposal for<br />sensitive assets</div>
                                         </li>
-                                        <li className="d-flex align-items-center gap-3">
+                                        <li className="d-flex align-items-center gap-3 mt-4">
                                             <div style={{ width: '50px', flexShrink: 0 }}><img src={green4} className="w-100" alt="Sustainability metrics" /></div>
-                                            <div className="fw-medium text-dark text-start lh-sm fs-5" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Sustainability metrics<br />for ESG & board<br />reporting</div>
+                                            <div className="fw-normal text-dark text-start lh-sm fs-5" style={{ fontFamily: "'RalewayW', sans-serif" }}>Sustainability metrics<br />for ESG & board<br />reporting</div>
                                         </li>
                                     </ul>
                                 </div>

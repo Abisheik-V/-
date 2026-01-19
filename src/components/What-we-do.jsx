@@ -257,9 +257,9 @@ const WhatWeDo = () => {
                         <span className="fw-normal" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Why Blue Planet</span> <span className="fw-bold" style={{ fontFamily: "'RalewayW', 'Segoe UI', Arial, sans-serif" }}>E-Waste Solutions</span>
                     </h2>
 
-                    <div className="row g-3 justify-content-center">
+                    <div className="row g-5 justify-content-center">
                         {/* Our Differentiators */}
-                        <div className="col-lg-5">
+                        <div className="col-lg-4 col-md-6">
                             <div className="h-100 overflow-hidden border shadow-sm border-dark border-2" style={{ borderRadius: '40px' }}>
                                 <div className="p-4 text-center text-white" style={{ backgroundColor: '#003366' }}>
                                     <h4 className="fw-bold mb-0" style={{ fontFamily: "'RalewayW', 'Segoe UI', Arial, sans-serif" }}>Our Differentiators</h4>
@@ -268,27 +268,27 @@ const WhatWeDo = () => {
                                     <ul className="list-unstyled d-flex flex-column gap-4 mb-0 justify-content-center h-100">
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={blue1} className="w-100" alt="Certified" /></div>
-                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>OEM-certified refurbishment & recycling</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW', sans-serif" }}>OEM-certified refurbishment & recycling</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={blue2} className="w-100" alt="Transparency" /></div>
-                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Transparency & full traceability</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW', sans-serif" }}>Transparency & full traceability</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={blue3} className="w-100" alt="Efficiency" /></div>
-                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Zero-landfill & zero-leakage operations</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW', sans-serif" }}>Zero-landfill & zero-leakage operations</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={blue4} className="w-100" alt="Secure data" /></div>
-                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Secure, certified data protection</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW', sans-serif" }}>Secure, certified data protection</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={blue5} className="w-100" alt="Circular economy" /></div>
-                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Circular economy model</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW', sans-serif" }}>Circular economy model</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={iconCarbon} className="w-100" alt="Carbon credit" /></div>
-                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Carbon credit generation</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW', sans-serif" }}>Carbon credit generation</div>
                                         </li>
                                     </ul>
                                 </div>
@@ -296,7 +296,7 @@ const WhatWeDo = () => {
                         </div>
 
                         {/* What They Deliver */}
-                        <div className="col-lg-5">
+                        <div className="col-lg-4 col-md-6">
                             <div className="h-100 overflow-hidden border shadow-sm border-dark border-2" style={{ borderRadius: '40px' }}>
                                 <div className="p-4 text-center text-white" style={{ backgroundColor: '#579d5e' }}>
                                     <h4 className="fw-bold mb-0" style={{ fontFamily: "'RalewayW', 'Segoe UI', Arial, sans-serif" }}>What They Deliver</h4>
@@ -305,27 +305,27 @@ const WhatWeDo = () => {
                                     <ul className="list-unstyled d-flex flex-column gap-4 mb-0 justify-content-center h-100">
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={green1} className="w-100" alt="Reliability" /></div>
-                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Guaranteed reliability & performance</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'Raleway', sans-serif" }}>Guaranteed reliability & performance</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={green2} className="w-100" alt="Accountability" /></div>
-                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>100% accountability from source to disposal</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'Raleway', sans-serif" }}>100% accountability from source to disposal</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={green3} className="w-100" alt="Ethical" /></div>
-                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Sustainable, ethical waste handling</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'Raleway', sans-serif" }}>Sustainable, ethical waste handling</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={green4} className="w-100" alt="Risk" /></div>
-                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Eliminates corporate risk & liability</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'Raleway', sans-serif" }}>Eliminates corporate risk & liability</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={iconUpcycle} className="w-100" alt="Value" /></div>
-                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Waste converted into enterprise value</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'Raleway', sans-serif" }}>Waste converted into enterprise value</div>
                                         </li>
                                         <li className="d-flex align-items-center gap-3 w-100">
                                             <div style={{ width: '60px', flexShrink: 0 }}><img src={iconPrecious} className="w-100" alt="Monetizable" /></div>
-                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'RalewayW-Paragraph', 'Segoe UI', Arial, sans-serif" }}>Monetizable sustainability impact</div>
+                                            <div className="text-dark fs-5 text-start" style={{ fontFamily: "'Raleway', sans-serif" }}>Monetizable sustainability impact</div>
                                         </li>
                                     </ul>
                                 </div>
